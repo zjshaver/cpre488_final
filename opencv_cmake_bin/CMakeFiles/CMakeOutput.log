@@ -1,0 +1,487 @@
+The target system is: Linux - 1 - arm
+The host system is: Linux - 2.6.32-573.3.1.el6.x86_64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++ 
+Build flags: ;-mthumb;-fdata-sections;-Wa,--noexecstack;-fsigned-char;-Wno-psabi
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc 
+Build flags: ;-mthumb;-fdata-sections;-Wa,--noexecstack;-fsigned-char;-Wno-psabi
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CompilerIdC/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++     -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++     -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++
+COLLECT_LTO_WRAPPER=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/lto-wrapper
+Target: arm-xilinx-linux-gnueabi
+Configured with: /scratch/janisjo/build6/2012.09-xilinx-linux-release/src/gcc-4.7-2012.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-xilinx-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --with-arch=armv5te --with-arch=armv7-a --with-cpu=cortex-a9 --with-float=softfp --with-fpu=neon-fp16 --disable-multilib --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=104 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.09-104' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-xilinx-linux-gnueabi/libc --with-build-sysroot=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/libc --with-gmp=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-poison-system-directories --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin
+Thread model: posix
+gcc version 4.7.2 (Sourcery CodeBench Lite 2012.09-104) 
+COMPILER_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/bin/
+LIBRARY_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-mthumb' '-fdata-sections' '-fsigned-char' '-Wno-psabi' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon-fp16' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2012' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=104'
+ /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2 --sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2 -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib --fix-cortex-a8 --no-undefined --gc-sections -z noexecstack -z relro -z now CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp']
+  ignore line: [/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++     -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/lto-wrapper]
+  ignore line: [Target: arm-xilinx-linux-gnueabi]
+  ignore line: [Configured with: /scratch/janisjo/build6/2012.09-xilinx-linux-release/src/gcc-4.7-2012.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-xilinx-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --with-arch=armv5te --with-arch=armv7-a --with-cpu=cortex-a9 --with-float=softfp --with-fpu=neon-fp16 --disable-multilib --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=104 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.09-104' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-xilinx-linux-gnueabi/libc --with-build-sysroot=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/libc --with-gmp=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-poison-system-directories --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (Sourcery CodeBench Lite 2012.09-104) ]
+  ignore line: [COMPILER_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-fdata-sections' '-fsigned-char' '-Wno-psabi' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon-fp16' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2012' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=104']
+  link line: [ /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2 --sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2 -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib --fix-cortex-a8 --no-undefined --gc-sections -z noexecstack -z relro -z now CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2] ==> ignore
+    arg [--sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib]
+    arg [--fix-cortex-a8] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc/arm-xilinx-linux-gnueabi/4.7.2]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/lib]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/lib]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc/arm-xilinx-linux-gnueabi/4.7.2;/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/lib;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/lib;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/usr/lib]
+
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc
+COLLECT_LTO_WRAPPER=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/lto-wrapper
+Target: arm-xilinx-linux-gnueabi
+Configured with: /scratch/janisjo/build6/2012.09-xilinx-linux-release/src/gcc-4.7-2012.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-xilinx-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --with-arch=armv5te --with-arch=armv7-a --with-cpu=cortex-a9 --with-float=softfp --with-fpu=neon-fp16 --disable-multilib --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=104 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.09-104' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-xilinx-linux-gnueabi/libc --with-build-sysroot=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/libc --with-gmp=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-poison-system-directories --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin
+Thread model: posix
+gcc version 4.7.2 (Sourcery CodeBench Lite 2012.09-104) 
+COMPILER_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/bin/
+LIBRARY_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-mthumb' '-fdata-sections' '-fsigned-char' '-Wno-psabi' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon-fp16' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2012' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=104'
+ /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2 --sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2 -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib --fix-cortex-a8 --no-undefined --gc-sections -z noexecstack -z relro -z now CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp']
+  ignore line: [/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi     -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi    -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/lto-wrapper]
+  ignore line: [Target: arm-xilinx-linux-gnueabi]
+  ignore line: [Configured with: /scratch/janisjo/build6/2012.09-xilinx-linux-release/src/gcc-4.7-2012.09/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-xilinx-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --with-arch=armv5te --with-arch=armv7-a --with-cpu=cortex-a9 --with-float=softfp --with-fpu=neon-fp16 --disable-multilib --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2012 -D__CS_SOURCERYGXX_MIN__=9 -D__CS_SOURCERYGXX_REV__=104 %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2012.09-104' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-xilinx-linux-gnueabi/libc --with-build-sysroot=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/libc --with-gmp=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-ppl=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-libelf=/scratch/janisjo/build6/2012.09-xilinx-linux-release/obj/pkg-2012.09-104-arm-xilinx-linux-gnueabi/xilinx-2012.09-104-arm-xilinx-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-poison-system-directories --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin --with-build-time-tools=/scratch/janisjo/build6/2012.09-xilinx-linux-release/install/arm-xilinx-linux-gnueabi/bin]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (Sourcery CodeBench Lite 2012.09-104) ]
+  ignore line: [COMPILER_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib/:/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-fdata-sections' '-fsigned-char' '-Wno-psabi' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon-fp16' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2012' '-D' '__CS_SOURCERYGXX_MIN__=9' '-D' '__CS_SOURCERYGXX_REV__=104']
+  link line: [ /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2 --sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2 -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib -L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib --fix-cortex-a8 --no-undefined --gc-sections -z noexecstack -z relro -z now CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o /remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../libexec/gcc/arm-xilinx-linux-gnueabi/4.7.2/collect2] ==> ignore
+    arg [--sysroot=/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crt1.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crti.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib]
+    arg [-L/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib] ==> dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib]
+    arg [--fix-cortex-a8] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/crtend.o] ==> ignore
+    arg [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc/arm-xilinx-linux-gnueabi/4.7.2]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.2/../../../../arm-xilinx-linux-gnueabi/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/lib]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/lib]
+  collapse dir [/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/../arm-xilinx-linux-gnueabi/libc/usr/lib] ==> [/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc/arm-xilinx-linux-gnueabi/4.7.2;/remote/Xilinx/14.6/EDK/gnu/arm/lin/lib/gcc;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/lib;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/lib;/remote/Xilinx/14.6/EDK/gnu/arm/lin/arm-xilinx-linux-gnueabi/libc/usr/lib]
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden  -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CheckFunctionExists.c
+/home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CheckFunctionExists.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden  -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden  -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CheckFunctionExists.c
+/home/zjshaver/cpre488/cpre488_final/cmake-2.8.7/Modules/CheckFunctionExists.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden  -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file semaphore.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file linux/videodev2.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+

@@ -1,0 +1,37 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Files]
+0=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\hdl\vhdl\user_logic.vhd
+1=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\hdl\vhdl\tpg.vhd
+2=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\hdl\vhdl\tpg_core.vhd
+3=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\data\tpg_v2_1_0.pao
+4=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\data\tpg_v2_1_0.mpd
+[Group]
+0=
+[Open Files]
+Open File0=D:\MVI_Work\VideoAnalytics\dev\TPG\implementation\pcores\tpg_v1_00_a\hdl\vhdl\user_logic.vhd
+Open File Pos0=14455
+Open File Line0=12380
+Active File Index=0
+Open File Window Pos0=2,3,-1,-1,-4,-30,44,58,789,664
+Open File1=
+Open File Pos1=753
+Open File Line1=0
+Open File Window Pos1=0,1,-1,-1,-4,-30,88,116,833,722
+Open File2=D:\MVI_Work\VideoAnalytics\dev\Top-VideoAnalytics\implementation\EDK_projects\VA_Demo2\hdl\system.vhd
+Open File Pos2=186363
+Open File Line2=166362
+Open File Window Pos2=2,3,-1,-1,-4,-30,220,290,1206,1014
+Open File3=
+Open File Pos3=20423
+Open File Line3=22225
+Open File Window Pos3=0,1,-1,-1,-4,-30,22,29,1031,632
+Open File4=
+Active File Display Mode=3
+Open File Pos4=21305
+Open File Line4=19738
+Open File Window Pos4=0,1,-1,-1,-4,-30,22,29,1031,632
+Open File5=
+[File View]
+Current Select=Project Files\
+Scroll Position=0

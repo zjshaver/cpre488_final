@@ -1,0 +1,2 @@
+vhdl work ../../mmcm_iserdes_divider_v6.vhd
+vhdl work ../example_design/mmcm_iserdes_divider_v6_exdes.vhd

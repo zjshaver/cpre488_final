@@ -1,0 +1,1740 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/zjshaver/cpre488/MP-2/system/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_tpg_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/zjshaver/cpre488/MP-2/system/pcores/" "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_axi_tpg_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_tpg_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
+Parsing entity <interrupt_control>.
+Parsing architecture <implementation> of entity <interrupt_control>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_00_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_00_a
+Parsing entity <slave_attachment>.
+Parsing architecture <rtl> of entity <slave_attachment>.
+WARNING:HDLCompiler:443 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/slave_attachment.vhd" Line 226: Function get_addr_bits does not always return a value.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_00_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <rtl> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_pkg.vhd" into library axi_tpg_v2_00_a
+Parsing package <ZplateLib>.
+Parsing package body <ZplateLib>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd" into library axi_tpg_v2_00_a
+Parsing entity <zplate>.
+Parsing architecture <rtl> of entity <zplate>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd" into library axi_tpg_v2_00_a
+Parsing entity <tpg_core>.
+Parsing architecture <Behavioral> of entity <tpg_core>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd" into library axi_tpg_v2_00_a
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" into library axi_tpg_v2_00_a
+Parsing entity <axi_tpg>.
+Parsing architecture <IMP> of entity <axi_tpg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/system_axi_tpg_0_wrapper.vhd" into library work
+Parsing entity <system_axi_tpg_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_axi_tpg_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_axi_tpg_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_tpg> (architecture <IMP>) with generics from library <axi_tpg_v2_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" Line 376: Assignment to ipif_bus2ip_addr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" Line 379: Assignment to ipif_bus2ip_cs ignored, since the identifier is never used
+
+Elaborating entity <axi_lite_ipif> (architecture <rtl>) with generics from library <axi_lite_ipif_v1_00_a>.
+
+Elaborating entity <slave_attachment> (architecture <rtl>) with generics from library <axi_lite_ipif_v1_00_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_00_a>.
+WARNING:HDLCompiler:746 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/address_decoder.vhd" Line 375: Range is empty (null range)
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <counter_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <axi_tpg_v2_00_a>.
+WARNING:HDLCompiler:92 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd" Line 385: slv_reg_stat should be on the sensitivity list of the process
+
+Elaborating entity <tpg_core> (architecture <Behavioral>) with generics from library <axi_tpg_v2_00_a>.
+
+Elaborating entity <zplate> (architecture <rtl>) with generics from library <axi_tpg_v2_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd" Line 90: Assignment to fe_hsync ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd" Line 331. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd" Line 336: Assignment to d_red_in ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd" Line 453: Assignment to hmin ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd" Line 196: Net <le_slv_reg_stat[7][31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_axi_tpg_0_wrapper>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/system/hdl/system_axi_tpg_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_axi_tpg_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_tpg>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_CHROMA_FORMAT = 0
+        C_DATA_WIDTH = 8
+        C_NUM_CHANNELS = 2
+        C_BASEADDR = "01010001001000000000000000000000"
+        C_HIGHADDR = "01010001001000001111111111111111"
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_CLK_FREQ_HZ = 50000000
+        C_FAMILY = "zynq"
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <VDMA_video_out_full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" line 385: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" line 385: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" line 385: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd" line 439: Output port <blue_out> of the instance <USER_LOGIC_I> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <ipif_Bus2IP_Reset>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <axi_tpg> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000001111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001010001001000000000000000000000","0000000000000000000000000000000001010001001000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_FAMILY = "zynq"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001010001001000000000000000000000","0000000000000000000000000000000001010001001000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000001111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "zynq"
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/slave_attachment.vhd" line 617: Output port <Count_Out> of the instance <DATA_PHASE_WDT.I_DPTO_COUNTER> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <s_axi_awready_reg>.
+    Found 1-bit register for signal <s_axi_wready_reg>.
+    Found 1-bit register for signal <s_axi_bvalid_reg>.
+    Found 2-bit register for signal <s_axi_bresp_reg>.
+    Found 1-bit register for signal <s_axi_arready_reg>.
+    Found 32-bit register for signal <s_axi_rdata_reg>.
+    Found 2-bit register for signal <s_axi_rresp_reg>.
+    Found 1-bit register for signal <s_axi_rvalid_reg>.
+    Found 32-bit register for signal <bus2ip_addr_reg>.
+    Found 1-bit register for signal <bus2ip_rnw_reg>.
+    Found 1-bit register for signal <axi_avalid_reg>.
+    Found 1-bit register for signal <counter_en_reg>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 3-bit register for signal <access_cs>.
+    Found finite state machine <FSM_0> for signal <access_cs>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 7                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | S_AXI_ARESETN_INV_15_o (positive)              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 7-to-1 multiplexer for signal <counter_en_i> created at line 395.
+    Summary:
+	inferred  77 D-type flip-flop(s).
+	inferred  53 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 10
+        C_S_AXI_MIN_SIZE = "00000000000000000000001111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001010001001000000000000000000000","0000000000000000000000000000000001010001001000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Found 1-bit register for signal <rdce_out_i<1>>.
+    Found 1-bit register for signal <wrce_out_i<1>>.
+    Found 1-bit register for signal <rdce_out_i<2>>.
+    Found 1-bit register for signal <wrce_out_i<2>>.
+    Found 1-bit register for signal <rdce_out_i<3>>.
+    Found 1-bit register for signal <wrce_out_i<3>>.
+    Found 1-bit register for signal <rdce_out_i<4>>.
+    Found 1-bit register for signal <wrce_out_i<4>>.
+    Found 1-bit register for signal <rdce_out_i<5>>.
+    Found 1-bit register for signal <wrce_out_i<5>>.
+    Found 1-bit register for signal <rdce_out_i<6>>.
+    Found 1-bit register for signal <wrce_out_i<6>>.
+    Found 1-bit register for signal <rdce_out_i<7>>.
+    Found 1-bit register for signal <wrce_out_i<7>>.
+    Found 1-bit register for signal <cs_out_i>.
+    WARNING:Xst:2404 -  FFs/Latches <cs_for_gaps_d1<0:0>> (without init value) have a constant value of 0 in block <address_decoder>.
+    WARNING:Xst:2404 -  FFs/Latches <cs_for_gaps_d2<0:0>> (without init value) have a constant value of 0 in block <address_decoder>.
+    WARNING:Xst:2404 -  FFs/Latches <CS_for_gaps<0:0>> (without init value) have a constant value of 0 in block <address_decoder>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <counter_f>.
+    Related source file is "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+        C_NUM_BITS = 3
+        C_FAMILY = "nofamily"
+    Found 4-bit register for signal <INFERRED_GEN.icount_out>.
+    Found 4-bit adder for signal <INFERRED_GEN.icount_out_x[3]_GND_24_o_add_3_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_24_o_GND_24_o_sub_3_OUT<3:0>> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter_f> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_SLV_DWIDTH = 32
+        C_NUM_REG = 8
+        C_FAMILY = "zynq"
+        C_Chroma_Format = 0
+    Set property "KEEP = TRUE" for signal <Bus2IP_RdCE>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_WrCE>.
+    Set property "KEEP = TRUE" for signal <slv_reg_write_sel>.
+    Set property "KEEP = TRUE" for signal <slv_reg_read_sel>.
+    Set property "syn_preserve = true" for signal <Bus2IP_Data_sync<1>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_Data_sync<1>>.
+    Set property "syn_keep = true" for signal <Bus2IP_Data_sync<1>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_Data_sync<0>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_Data_sync<0>>.
+    Set property "syn_keep = true" for signal <Bus2IP_Data_sync<0>>.
+    Set property "syn_preserve = true" for signal <slv_ip2bus_data_sync<1>>.
+    Set property "KEEP = TRUE" for signal <slv_ip2bus_data_sync<1>>.
+    Set property "syn_keep = true" for signal <slv_ip2bus_data_sync<1>>.
+    Set property "syn_preserve = true" for signal <slv_ip2bus_data_sync<0>>.
+    Set property "KEEP = TRUE" for signal <slv_ip2bus_data_sync<0>>.
+    Set property "syn_keep = true" for signal <slv_ip2bus_data_sync<0>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_WrCE_sync<1>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_WrCE_sync<1>>.
+    Set property "syn_keep = true" for signal <Bus2IP_WrCE_sync<1>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_WrCE_sync<0>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_WrCE_sync<0>>.
+    Set property "syn_keep = true" for signal <Bus2IP_WrCE_sync<0>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_RdCE_sync<1>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_RdCE_sync<1>>.
+    Set property "syn_keep = true" for signal <Bus2IP_RdCE_sync<1>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_RdCE_sync<0>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_RdCE_sync<0>>.
+    Set property "syn_keep = true" for signal <Bus2IP_RdCE_sync<0>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_BE_sync<1>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_BE_sync<1>>.
+    Set property "syn_keep = true" for signal <Bus2IP_BE_sync<1>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_BE_sync<0>>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_BE_sync<0>>.
+    Set property "syn_keep = true" for signal <Bus2IP_BE_sync<0>>.
+    Set property "syn_preserve = true" for signal <Bus2IP_Reset_sync>.
+    Set property "KEEP = TRUE" for signal <Bus2IP_Reset_sync>.
+    Set property "syn_keep = true" for signal <Bus2IP_Reset_sync>.
+    Set property "syn_preserve = true" for signal <slv_write_ack_sync>.
+    Set property "KEEP = TRUE" for signal <slv_write_ack_sync>.
+    Set property "syn_keep = true" for signal <slv_write_ack_sync>.
+    Set property "syn_preserve = true" for signal <slv_read_ack_sync>.
+    Set property "KEEP = TRUE" for signal <slv_read_ack_sync>.
+    Set property "syn_keep = true" for signal <slv_read_ack_sync>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<2>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <le_slv_reg_stat<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit register for signal <Bus2IP_Data_sync<0>>.
+    Found 8-bit register for signal <Bus2IP_WrCE_sync<1>>.
+    Found 8-bit register for signal <Bus2IP_WrCE_sync<0>>.
+    Found 8-bit register for signal <Bus2IP_RdCE_sync<1>>.
+    Found 8-bit register for signal <Bus2IP_RdCE_sync<0>>.
+    Found 4-bit register for signal <Bus2IP_BE_sync<1>>.
+    Found 4-bit register for signal <Bus2IP_BE_sync<0>>.
+    Found 2-bit register for signal <Bus2IP_Reset_sync>.
+    Found 32-bit register for signal <slv_ip2bus_data_sync<1>>.
+    Found 32-bit register for signal <slv_ip2bus_data_sync<0>>.
+    Found 2-bit register for signal <slv_write_ack_sync>.
+    Found 2-bit register for signal <slv_read_ack_sync>.
+    Found 1-bit register for signal <rdack_d>.
+    Found 1-bit register for signal <wrack_d>.
+    Found 32-bit register for signal <slv_reg<7>>.
+    Found 32-bit register for signal <slv_reg<6>>.
+    Found 32-bit register for signal <slv_reg<5>>.
+    Found 32-bit register for signal <slv_reg<4>>.
+    Found 32-bit register for signal <slv_reg<3>>.
+    Found 32-bit register for signal <slv_reg<2>>.
+    Found 32-bit register for signal <slv_reg<1>>.
+    Found 32-bit register for signal <slv_reg<0>>.
+    Found 32-bit register for signal <Bus2IP_Data_sync<1>>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal Bus2IP_WrCE_sync<0> may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal slv_ip2bus_data_sync<0> may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal slv_read_ack_sync may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal slv_write_ack_sync may hinder XST clustering optimizations.
+    Summary:
+	inferred 432 D-type flip-flop(s).
+	inferred 263 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <tpg_core>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd".
+        C_FAMILY = "zynq"
+        C_Chroma_Format = 0
+WARNING:Xst:647 - Input <CbCrPolarity> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <hsync_out> equivalent to <d2_hsync_in> has been removed
+    Register <vsync_out> equivalent to <d2_vsync_in> has been removed
+    Found 1-bit register for signal <d_hsync_in>.
+    Found 1-bit register for signal <d_vblank_in>.
+    Found 1-bit register for signal <d_hblank_in>.
+    Found 1-bit register for signal <d2_hsync_in>.
+    Found 1-bit register for signal <d2_vsync_in>.
+    Found 1-bit register for signal <re_vsync_in>.
+    Found 1-bit register for signal <re_hsync_in>.
+    Found 1-bit register for signal <fe_hsync_in>.
+    Found 8-bit register for signal <RampStart>.
+    Found 8-bit register for signal <vdata>.
+    Found 8-bit register for signal <hdata>.
+    Found 12-bit register for signal <VCount>.
+    Found 12-bit register for signal <HCount>.
+    Found 9-bit register for signal <BarWidth>.
+    Found 9-bit register for signal <BarHCount>.
+    Found 3-bit register for signal <BarSel>.
+    Found 8-bit register for signal <bar_red>.
+    Found 8-bit register for signal <bar_green>.
+    Found 8-bit register for signal <bar_blue>.
+    Found 1-bit register for signal <d_de_in>.
+    Found 1-bit register for signal <vblank_out>.
+    Found 1-bit register for signal <hblank_out>.
+    Found 1-bit register for signal <t_de_out>.
+    Found 1-bit register for signal <fe_de_in>.
+    Found 8-bit register for signal <XHairValue>.
+    Found 8-bit register for signal <red>.
+    Found 8-bit register for signal <green>.
+    Found 8-bit register for signal <blue>.
+    Found 12-bit register for signal <BoxTop>.
+    Found 12-bit register for signal <BoxBottom>.
+    Found 12-bit register for signal <BoxLeft>.
+    Found 12-bit register for signal <BoxRight>.
+    Found 1-bit register for signal <HDir>.
+    Found 1-bit register for signal <VDir>.
+    Found 12-bit register for signal <HMax>.
+    Found 12-bit register for signal <VMax>.
+    Found 12-bit register for signal <BoxHCoord>.
+    Found 12-bit register for signal <BoxVCoord>.
+    Found 1-bit register for signal <VBoxEn>.
+    Found 1-bit register for signal <HBoxEn>.
+    Found 1-bit register for signal <BoxEn>.
+    Found 8-bit register for signal <t_red_out>.
+    Found 8-bit register for signal <t_blue_out>.
+    Found 8-bit register for signal <t_green_out>.
+    Found 1-bit register for signal <d_vsync_in>.
+    Found 8-bit adder for signal <RampStart[7]_Motion_speed[7]_add_0_OUT> created at line 190.
+    Found 8-bit adder for signal <vdata[7]_GND_27_o_add_2_OUT> created at line 198.
+    Found 8-bit adder for signal <hdata[7]_GND_27_o_add_3_OUT> created at line 200.
+    Found 12-bit adder for signal <VCount[11]_GND_27_o_add_10_OUT> created at line 208.
+    Found 12-bit adder for signal <HCount[11]_GND_27_o_add_11_OUT> created at line 211.
+    Found 3-bit adder for signal <BarSel[2]_GND_27_o_add_29_OUT> created at line 268.
+    Found 9-bit adder for signal <BarHCount[8]_GND_27_o_add_30_OUT> created at line 271.
+    Found 12-bit adder for signal <BoxHCoord[11]_BoxSize[11]_add_72_OUT> created at line 473.
+    Found 12-bit adder for signal <BoxVCoord[11]_BoxSize[11]_add_73_OUT> created at line 475.
+    Found 12-bit adder for signal <BoxHCoord[11]_GND_27_o_add_78_OUT> created at line 502.
+    Found 12-bit adder for signal <BoxVCoord[11]_GND_27_o_add_81_OUT> created at line 507.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_71_OUT<11:0>> created at line 469.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_72_OUT<11:0>> created at line 470.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_80_OUT<11:0>> created at line 504.
+    Found 12-bit subtractor for signal <GND_27_o_GND_27_o_sub_83_OUT<11:0>> created at line 509.
+    Found 8x24-bit Read Only RAM for signal <_n0566>
+    Found 9-bit comparator equal for signal <BarHCount[8]_BarWidth[8]_equal_29_o> created at line 267
+    Found 12-bit comparator greater for signal <HMax[11]_BoxHCoord[11]_LessThan_75_o> created at line 480
+    Found 12-bit comparator lessequal for signal <BoxHCoord[11]_GND_27_o_LessThan_76_o> created at line 484
+    Found 12-bit comparator greater for signal <VMax[11]_BoxVCoord[11]_LessThan_77_o> created at line 490
+    Found 12-bit comparator lessequal for signal <BoxVCoord[11]_GND_27_o_LessThan_78_o> created at line 494
+    Found 12-bit comparator equal for signal <VCount[11]_BoxTop[11]_equal_97_o> created at line 517
+    Found 12-bit comparator not equal for signal <VCount[11]_BoxBottom[11]_equal_98_o> created at line 519
+    Found 12-bit comparator equal for signal <HCount[11]_BoxLeft[11]_equal_99_o> created at line 525
+    Found 12-bit comparator not equal for signal <HCount[11]_BoxRight[11]_equal_100_o> created at line 527
+    Found 12-bit comparator equal for signal <VCount[11]_XHairsV[11]_equal_121_o> created at line 546
+    Found 12-bit comparator equal for signal <HCount[11]_XHairsH[11]_equal_122_o> created at line 546
+    Summary:
+	inferred   1 RAM(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred 264 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <tpg_core> synthesized.
+
+Synthesizing Unit <zplate>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd".
+        OutWidth = 8
+        DeltaWidth = 16
+    Found 1-bit register for signal <d_vsync>.
+    Found 1-bit register for signal <d2_vsync>.
+    Found 1-bit register for signal <re_vsync>.
+    Found 16-bit register for signal <d_VDelta2>.
+    Found 16-bit register for signal <NewVDelta>.
+    Found 16-bit register for signal <d_NewVDelta>.
+    Found 16-bit register for signal <CurrentVLUTAddr>.
+    Found 1-bit register for signal <d_hsync>.
+    Found 1-bit register for signal <d2_hsync>.
+    Found 1-bit register for signal <re_hsync>.
+    Found 16-bit register for signal <d_HDelta2>.
+    Found 16-bit register for signal <NewHDelta>.
+    Found 16-bit register for signal <CurrentHLUTAddr>.
+    Found 16-bit register for signal <d_NewHDelta>.
+    Found 16-bit register for signal <d_CurrentHLUTAddr>.
+    Found 8-bit register for signal <t_DOut>.
+    Found 1-bit register for signal <d_de_in>.
+    Found 16-bit adder for signal <NewVDelta[15]_d_VDelta2[15]_add_2048_OUT> created at line 82.
+    Found 16-bit adder for signal <CurrentVLUTAddr[15]_d_NewVDelta[15]_add_2049_OUT> created at line 84.
+    Found 16-bit adder for signal <NewHDelta[15]_d_HDelta2[15]_add_2062_OUT> created at line 105.
+    Found 16-bit adder for signal <CurrentHLUTAddr[15]_d_NewHDelta[15]_add_2063_OUT> created at line 107.
+    Found 2048x8-bit Read Only RAM for signal <AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 159 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <zplate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 2048x8-bit single-port Read Only RAM                  : 1
+ 8x24-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 18
+ 12-bit adder                                          : 4
+ 12-bit addsub                                         : 2
+ 12-bit subtractor                                     : 2
+ 16-bit adder                                          : 4
+ 3-bit adder                                           : 1
+ 4-bit addsub                                          : 1
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 1
+# Registers                                            : 101
+ 1-bit register                                        : 39
+ 12-bit register                                       : 10
+ 16-bit register                                       : 9
+ 2-bit register                                        : 5
+ 24-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 14
+ 4-bit register                                        : 3
+ 8-bit register                                        : 17
+ 9-bit register                                        : 2
+# Comparators                                          : 11
+ 12-bit comparator equal                               : 4
+ 12-bit comparator greater                             : 2
+ 12-bit comparator lessequal                           : 2
+ 12-bit comparator not equal                           : 2
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 375
+ 1-bit 2-to-1 multiplexer                              : 309
+ 1-bit 7-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 6
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 14
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 35
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><0> and slv_reg_write_sel<0> slv_reg_write_sel<0> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><1> and slv_reg_write_sel<1> slv_reg_write_sel<1> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><2> and slv_reg_write_sel<2> slv_reg_write_sel<2> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><3> and slv_reg_write_sel<3> slv_reg_write_sel<3> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><4> and slv_reg_write_sel<4> slv_reg_write_sel<4> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><5> and slv_reg_write_sel<5> slv_reg_write_sel<5> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><6> and slv_reg_write_sel<6> slv_reg_write_sel<6> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_WrCE_sync<1><7> and slv_reg_write_sel<7> slv_reg_write_sel<7> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><0> and slv_reg_read_sel<0> slv_reg_read_sel<0> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><1> and slv_reg_read_sel<1> slv_reg_read_sel<1> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><2> and slv_reg_read_sel<2> slv_reg_read_sel<2> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><3> and slv_reg_read_sel<3> slv_reg_read_sel<3> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><4> and slv_reg_read_sel<4> slv_reg_read_sel<4> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><5> and slv_reg_read_sel<5> slv_reg_read_sel<5> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><6> and slv_reg_read_sel<6> slv_reg_read_sel<6> signal will be lost.
+WARNING:Xst:638 - in unit user_logic Conflict on KEEP property on signal Bus2IP_RdCE_sync<1><7> and slv_reg_read_sel<7> slv_reg_read_sel<7> signal will be lost.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <tpg_core>.
+The following registers are absorbed into accumulator <RampStart>: 1 register on signal <RampStart>.
+The following registers are absorbed into accumulator <BoxHCoord>: 1 register on signal <BoxHCoord>.
+The following registers are absorbed into accumulator <BoxVCoord>: 1 register on signal <BoxVCoord>.
+The following registers are absorbed into counter <vdata>: 1 register on signal <vdata>.
+The following registers are absorbed into counter <hdata>: 1 register on signal <hdata>.
+The following registers are absorbed into counter <HCount>: 1 register on signal <HCount>.
+The following registers are absorbed into counter <VCount>: 1 register on signal <VCount>.
+The following registers are absorbed into counter <BarHCount>: 1 register on signal <BarHCount>.
+The following registers are absorbed into counter <BarSel>: 1 register on signal <BarSel>.
+INFO:Xst:3231 - The small RAM <Mram__n0566> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 24-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BarSel>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <tpg_core> synthesized (advanced).
+
+Synthesizing (advanced) Unit <zplate>.
+The following registers are absorbed into accumulator <NewVDelta>: 1 register on signal <NewVDelta>.
+The following registers are absorbed into accumulator <CurrentVLUTAddr>: 1 register on signal <CurrentVLUTAddr>.
+The following registers are absorbed into accumulator <NewHDelta>: 1 register on signal <NewHDelta>, 1 register on signal <d_hsync>, 1 register on signal <AddSubConstReg>, 1 register on signal <CinConstReg>.
+The following registers are absorbed into accumulator <CurrentHLUTAddr>: 1 register on signal <CurrentHLUTAddr>, 1 register on signal <d_hsync>, 1 register on signal <AddSubConstReg>, 1 register on signal <CinConstReg>.
+INFO:Xst:3226 - The RAM <Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <t_DOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <d_CurrentHLUTAddr<15:5>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <t_DOut>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <zplate> synthesized (advanced).
+WARNING:Xst:2677 - Node <slv_reg_6_12> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_13> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_16> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_17> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_18> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_19> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_20> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_21> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_22> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_23> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_24> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_25> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_26> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_27> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_6_31> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_24> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_25> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_26> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_27> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_7_31> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_12> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_13> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_3_31> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_12> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_13> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_2_31> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_9> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_10> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_11> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_12> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_13> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_16> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_17> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_18> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_19> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_20> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_21> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_22> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_23> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_24> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_25> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_26> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_27> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_1_31> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_14> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_15> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_16> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_17> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_18> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_19> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_20> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_21> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_22> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_23> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_24> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_25> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_26> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_27> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_28> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_29> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_30> of sequential type is unconnected in block <user_logic>.
+WARNING:Xst:2677 - Node <slv_reg_0_31> of sequential type is unconnected in block <user_logic>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 2048x8-bit single-port block Read Only RAM            : 1
+ 8x24-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 2
+ 12-bit subtractor                                     : 2
+ 4-bit addsub                                          : 1
+# Counters                                             : 6
+ 12-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 8-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Accumulators                                         : 7
+ 12-bit updown accumulator                             : 2
+ 16-bit up loadable accumulator                        : 4
+ 8-bit up loadable accumulator                         : 1
+# Registers                                            : 713
+ Flip-Flops                                            : 713
+# Comparators                                          : 11
+ 12-bit comparator equal                               : 4
+ 12-bit comparator greater                             : 2
+ 12-bit comparator lessequal                           : 2
+ 12-bit comparator not equal                           : 2
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 270
+ 1-bit 2-to-1 multiplexer                              : 214
+ 1-bit 7-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 14
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 32
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <access_cs[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000
+ reading    | 001
+ read_wait  | 010
+ write_wait | 011
+ writing    | 100
+ b_valid    | 101
+ bresp_wait | 110
+------------------------
+WARNING:Xst:1710 - FF/Latch <s_axi_bresp_reg_0> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_axi_rresp_reg_0> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XHairValue_0> (without init value) has a constant value of 0 in block <tpg_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XHairValue_1> (without init value) has a constant value of 0 in block <tpg_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XHairValue_2> (without init value) has a constant value of 0 in block <tpg_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XHairValue_3> (without init value) has a constant value of 0 in block <tpg_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XHairValue_4> (without init value) has a constant value of 1 in block <tpg_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <name> (without init value) has a constant value of 1 in block <zplate>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <name2> (without init value) has a constant value of 1 in block <zplate>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <bar_blue_0> in Unit <tpg_core> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_blue_1> <bar_blue_2> <bar_blue_3> <bar_blue_4> <bar_blue_5> <bar_blue_6> <bar_blue_7> 
+INFO:Xst:2261 - The FF/Latch <XHairValue_5> in Unit <tpg_core> is equivalent to the following 2 FFs/Latches, which will be removed : <XHairValue_6> <XHairValue_7> 
+INFO:Xst:2261 - The FF/Latch <bar_green_0> in Unit <tpg_core> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_green_1> <bar_green_2> <bar_green_3> <bar_green_4> <bar_green_5> <bar_green_6> <bar_green_7> 
+INFO:Xst:2261 - The FF/Latch <bar_red_0> in Unit <tpg_core> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_red_1> <bar_red_2> <bar_red_3> <bar_red_4> <bar_red_5> <bar_red_6> <bar_red_7> 
+INFO:Xst:2261 - The FF/Latch <d_hsync> in Unit <zplate> is equivalent to the following 2 FFs/Latches, which will be removed : <name1> <name3> 
+
+Optimizing unit <system_axi_tpg_0_wrapper> ...
+
+Optimizing unit <slave_attachment> ...
+WARNING:Xst:1710 - FF/Latch <bus2ip_addr_reg_31> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_30> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_29> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_28> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_27> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_26> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_25> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_24> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_23> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_22> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_21> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_20> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_19> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_18> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_17> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_16> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_15> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_14> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_13> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_12> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_11> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus2ip_addr_reg_10> (without init value) has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <address_decoder> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <tpg_core> ...
+
+Optimizing unit <zplate> ...
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_9> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_8> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_7> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_6> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_5> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_1> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_0> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_axi_tpg_0_wrapper>.
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/d2_vsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/d2_vsync> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxLeft_0> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxTop_0> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxVCoord_0> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxHCoord_0> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/d_hsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/d_hsync> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/d_de_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/d_de_in> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/re_hsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/re_hsync> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/d_vsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/d_vsync> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxRight_0> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/BoxBottom_0> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/re_vsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/re_vsync> 
+INFO:Xst:2261 - The FF/Latch <axi_tpg_0/USER_LOGIC_I/tpg_u1/d2_hsync_in> in Unit <system_axi_tpg_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1/d2_hsync> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_axi_tpg_0_wrapper, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 794
+ Flip-Flops                                            : 794
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_axi_tpg_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1242
+#      GND                         : 1
+#      INV                         : 9
+#      LUT2                        : 193
+#      LUT3                        : 291
+#      LUT4                        : 130
+#      LUT5                        : 85
+#      LUT6                        : 141
+#      MUXCY                       : 199
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 191
+# FlipFlops/Latches                : 794
+#      FD                          : 198
+#      FDE                         : 202
+#      FDR                         : 50
+#      FDRE                        : 344
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             794  out of  106400     0%  
+ Number of Slice LUTs:                  849  out of  53200     1%  
+    Number used as Logic:               849  out of  53200     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1074
+   Number with an unused Flip Flop:     280  out of   1074    26%  
+   Number with an unused LUT:           225  out of   1074    20%  
+   Number of fully used LUT-FF pairs:   569  out of   1074    52%  
+   Number of unique control sets:        33
+
+IO Utilization: 
+ Number of IOs:                         308
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    140     0%  
+    Number using Block RAM only:          1
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                | Load  |
+-----------------------------------+----------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/access_cs_FSM_FFd2)| 140   |
+VDMA_wd_clk                        | NONE(axi_tpg_0/USER_LOGIC_I/slv_reg_0_13)                            | 655   |
+-----------------------------------+----------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                                                                                            | Load  |
+-----------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+S_AXI_RRESP<0>(XST_GND:G)          | NONE(axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT)| 2     |
+-----------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.945ns (Maximum Frequency: 339.559MHz)
+   Minimum input arrival time before clock: 1.957ns
+   Maximum output required time after clock: 2.454ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 2.640ns (frequency: 378.788MHz)
+  Total number of paths / destination ports: 1396 / 174
+-------------------------------------------------------------------------
+Delay:               2.640ns (Levels of Logic = 3)
+  Source:            axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/access_cs_FSM_FFd1 (FF)
+  Destination:       axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_3 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/access_cs_FSM_FFd1 to axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             20   0.282   0.727  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/access_cs_FSM_FFd1 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/access_cs_FSM_FFd1)
+     LUT5:I2->O            1   0.053   0.413  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i22 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i21)
+     LUT6:I5->O            4   0.053   0.433  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i23 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i23)
+     LUT3:I2->O            5   0.053   0.426  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i24 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/counter_en_i)
+     FDE:CE                    0.200          axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_0
+    ----------------------------------------
+    Total                      2.640ns (0.641ns logic, 1.999ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'VDMA_wd_clk'
+  Clock period: 2.945ns (frequency: 339.559MHz)
+  Total number of paths / destination ports: 10090 / 1352
+-------------------------------------------------------------------------
+Delay:               2.945ns (Levels of Logic = 1)
+  Source:            axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT (RAM)
+  Destination:       axi_tpg_0/USER_LOGIC_I/tpg_u1/blue_7 (FF)
+  Source Clock:      VDMA_wd_clk rising
+  Destination Clock: VDMA_wd_clk rising
+
+  Data Path: axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT to axi_tpg_0/USER_LOGIC_I/tpg_u1/blue_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO7    3   2.454   0.427  axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT (ZP_debug<7>)
+     LUT5:I4->O            1   0.053   0.000  axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_blue[7]_wide_mux_56_OUT113 (axi_tpg_0/USER_LOGIC_I/tpg_u1/PatternSel[3]_blue[7]_wide_mux_56_OUT<7>)
+     FDE:D                     0.011          axi_tpg_0/USER_LOGIC_I/tpg_u1/blue_7
+    ----------------------------------------
+    Total                      2.945ns (2.518ns logic, 0.427ns route)
+                                       (85.5% logic, 14.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 648 / 151
+-------------------------------------------------------------------------
+Offset:              1.957ns (Levels of Logic = 3)
+  Source:            S_AXI_AWVALID (PAD)
+  Destination:       axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_3 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_AWVALID to axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I0->O            1   0.053   0.413  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i22 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i21)
+     LUT6:I5->O            4   0.053   0.433  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i23 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i23)
+     LUT3:I2->O            5   0.053   0.426  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_counter_en_i24 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/counter_en_i)
+     FDE:CE                    0.200          axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/DATA_PHASE_WDT.I_DPTO_COUNTER/INFERRED_GEN.icount_out_0
+    ----------------------------------------
+    Total                      1.957ns (0.685ns logic, 1.272ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'VDMA_wd_clk'
+  Total number of paths / destination ports: 57 / 53
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 3)
+  Source:            video_data_in<10> (PAD)
+  Destination:       axi_tpg_0/USER_LOGIC_I/tpg_u1/green_2 (FF)
+  Destination Clock: VDMA_wd_clk rising
+
+  Data Path: video_data_in<10> to axi_tpg_0/USER_LOGIC_I/tpg_u1/green_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I1->O            1   0.053   0.413  axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_green[7]_wide_mux_55_OUT41 (axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_green[7]_wide_mux_55_OUT4)
+     LUT6:I5->O            1   0.053   0.485  axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_green[7]_wide_mux_55_OUT42 (axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_green[7]_wide_mux_55_OUT41)
+     LUT6:I4->O            1   0.053   0.000  axi_tpg_0/USER_LOGIC_I/tpg_u1/Mmux_PatternSel[3]_green[7]_wide_mux_55_OUT43 (axi_tpg_0/USER_LOGIC_I/tpg_u1/PatternSel[3]_green[7]_wide_mux_55_OUT<2>)
+     FDE:D                     0.011          axi_tpg_0/USER_LOGIC_I/tpg_u1/green_2
+    ----------------------------------------
+    Total                      1.154ns (0.256ns logic, 0.898ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 39 / 39
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 0)
+  Source:            axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_1 (FF)
+  Destination:       S_AXI_BRESP<1> (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_1 to S_AXI_BRESP<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.282   0.000  axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_1 (axi_tpg_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_1)
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VDMA_wd_clk'
+  Total number of paths / destination ports: 136 / 136
+-------------------------------------------------------------------------
+Offset:              2.454ns (Levels of Logic = 0)
+  Source:            axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT (RAM)
+  Destination:       ZP_debug<7> (PAD)
+  Source Clock:      VDMA_wd_clk rising
+
+  Data Path: axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT to ZP_debug<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO7    3   2.454   0.000  axi_tpg_0/USER_LOGIC_I/tpg_u1/ZPlate1_Mram_AppliedRdAddr[10]_SinTableArray[2047][7]_wide_mux_2064_OUT (ZP_debug<7>)
+    ----------------------------------------
+    Total                      2.454ns (2.454ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            clk (PAD)
+  Destination:       VDMA_wd_clk (PAD)
+
+  Data Path: clk to VDMA_wd_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    2.640|         |         |         |
+VDMA_wd_clk    |    3.256|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock VDMA_wd_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    2.860|         |         |         |
+VDMA_wd_clk    |    2.945|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 15.13 secs
+ 
+--> 
+
+
+Total memory usage is 650140 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  171 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

@@ -1,0 +1,9 @@
+-batch 
+-create fmc_imageon_vita_receiver 
+-ver 1.00.a 
+-dir "C:\FMC_IMAGEON_Tests\ml605_avnet_hw04" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 32 
+-xps 
+-driver 

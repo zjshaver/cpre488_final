@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional
+END
+simcmds.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/simcmds.tcl
+END
+wave.do
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/wave.do
+END
+simulate_ncsim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/simulate_ncsim.sh
+END
+simulate_isim.bat
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/simulate_isim.bat
+END
+wave.sv
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/wave.sv
+END
+simulate_isim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/simulate_isim.sh
+END
+simulate_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/mmcm_iserdes_divider_v6/simulation/functional/simulate_mti.do
+END

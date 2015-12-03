@@ -1,0 +1,3 @@
+vhdl fmc_imageon_hdmi_out_v1_05_a /home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd
+vhdl fmc_imageon_hdmi_out_v1_05_a /home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/adv7511_embed_syncs.vhd
+vhdl work ../hdl/system_fmc_imageon_hdmi_out_0_wrapper.vhd

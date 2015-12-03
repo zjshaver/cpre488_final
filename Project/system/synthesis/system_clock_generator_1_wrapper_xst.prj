@@ -1,0 +1,6 @@
+vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd
+vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd
+vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd
+vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd
+VHDL clock_generator_1_v4_03_a /home/zjshaver/cpre488/MP-2/system/hdl/elaborate/clock_generator_1_v4_03_a/hdl/vhdl/clock_generator.vhd
+vhdl work ../hdl/system_clock_generator_1_wrapper.vhd

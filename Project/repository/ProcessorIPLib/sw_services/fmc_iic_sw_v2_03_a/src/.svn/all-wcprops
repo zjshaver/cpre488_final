@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_iic_sw_v2_03_a/src
+END
+fmc_iic.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_iic_sw_v2_03_a/src/fmc_iic.h
+END
+fmc_iic_sg.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_iic_sw_v2_03_a/src/fmc_iic_sg.c
+END
+fmc_iic_axi.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_iic_sw_v2_03_a/src/fmc_iic_axi.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_iic_sw_v2_03_a/src/Makefile
+END

@@ -1,0 +1,72 @@
+##----------------------------------------------------------------
+##      _____
+##     /     \
+##    /____   \____
+##   / \===\   \==/
+##  /___\===\___\/  AVNET
+##       \======/
+##        \====/    
+##---------------------------------------------------------------
+##
+## This design is the property of Avnet.  Publication of this
+## design is not authorized without written consent from Avnet.
+## 
+## Please direct any questions to:  technical.support@avnet.com
+##
+## Disclaimer:
+##    Avnet, Inc. makes no warranty for the use of this code or design.
+##    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+##    any errors, which may appear in this code, nor does it make a commitment
+##    to update the information contained herein. Avnet, Inc specifically
+##    disclaims any implied warranties of fitness for a particular purpose.
+##                     Copyright(c) 2011 Avnet, Inc.
+##                             All rights reserved.
+##
+##----------------------------------------------------------------
+##
+## Create Date:         Sep 15, 2011
+## Design Name:         FMC-IMAGEON
+## Module Name:         fmc_imageon_vita_receiver_v2_1_0.bbd
+## Project Name:        FMC-IMAGEON
+## Target Devices:      Virtex-6
+## Avnet Boards:        FMC-IMAGEON
+##
+## Tool versions:       ISE 14.1
+##
+## Description:         FMC-IMAGEON VITA receiver interface.
+##                      Black Box Definition
+##
+## Dependencies:        
+##
+## Revision:            Sep 15, 2011: 1.01 Initial version
+##                      Feb 22, 2012: 1.09 Modified
+##                                         - port to Zynq
+##                                         - new C_XSVI_USE_SYNCGEN option
+##                      Jun 01, 2012: 1.12 Modify:
+##                                         - Move syncgen after demux_fifo
+##                                         - Increase size of demux_fifo
+##                                           (to tolerate jitter in video timing from sensor)
+##                                         - Add programmable delay on framestart for syncgen
+##                      Jul 31, 2012: 1.13 Modify:
+##                                         - define clk200, clk, clk4x with SIGIS = CLK
+##                                         - define reset with SIGIS = RST
+##                                         - port to Spartan-6
+##
+##----------------------------------------------------------------
+
+################################################################################
+##
+## Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+## 
+## Black Box Definition
+## 
+################################################################################
+
+C_FAMILY     FILES
+
+spartan6     afifo_32_s6.ngc, afifo_64i_16o_s6.ngc, pulse_regen_s6.ngc, FIFO18_s6.ngc
+virtex6      afifo_32_v6.ngc, afifo_64i_16o_v6.ngc, pulse_regen_v6.ngc
+artix7       afifo_32_k7.ngc, afifo_64i_16o_k7.ngc, pulse_regen_k7.ngc
+kintex7      afifo_32_k7.ngc, afifo_64i_16o_k7.ngc, pulse_regen_k7.ngc
+virtex7      afifo_32_k7.ngc, afifo_64i_16o_k7.ngc, pulse_regen_k7.ngc
+zynq         afifo_32_k7.ngc, afifo_64i_16o_k7.ngc, pulse_regen_k7.ngc

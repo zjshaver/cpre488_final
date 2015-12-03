@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_v6/example_design
+END
+pulse_regen_v6_top.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_v6/example_design/pulse_regen_v6_top.ucf
+END
+pulse_regen_v6_top.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_v6/example_design/pulse_regen_v6_top.xdc
+END
+pulse_regen_v6_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_v6/example_design/pulse_regen_v6_top.vhd
+END
+pulse_regen_v6_top_wrapper.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_v6/example_design/pulse_regen_v6_top_wrapper.vhd
+END

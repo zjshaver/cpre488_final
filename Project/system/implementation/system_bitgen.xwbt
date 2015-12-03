@@ -1,0 +1,7 @@
+INFILE=/home/zjshaver/cpre488/cpre488_final/MP2/system/implementation/system.ncd
+OUTFILE=/home/zjshaver/cpre488/cpre488_final/MP2/system/implementation/system.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/home/zjshaver/cpre488/cpre488_final/MP2/system/implementation
+LICENSE=ISE
+USER_INFO=174156856_174156857_210589608_946

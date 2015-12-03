@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl
+END
+tc_detector.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd
+END
+pselect_f.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/pselect_f.vhd
+END
+axi_lite_ipif.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/axi_lite_ipif.vhd
+END
+address_decoder.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/address_decoder.vhd
+END
+tc_generator.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd
+END
+proc_common_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/proc_common_pkg.vhd
+END
+axis_input_buffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/axis_input_buffer.vhd
+END
+family_support.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/family_support.vhd
+END
+axis_output_buffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/axis_output_buffer.vhd
+END
+MemXLib_utils.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/MemXLib_utils.vhd
+END
+slave_attachment.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd
+END
+counter_f.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/counter_f.vhd
+END
+debug.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/debug.vhd
+END
+ipif_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/ipif_pkg.vhd
+END
+axi4s_control.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/axi4s_control.vhd
+END
+tc_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/tc_top.vhd
+END
+MemXLib_arch.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/MemXLib_arch.vhd
+END
+video_clock_cross.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/video_clock_cross.vhd
+END
+video_ctrl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/video_ctrl.vhd
+END
+v_tc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd
+END
+video_ctrl_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/v_tc_v5_00_a/hdl/vhdl/video_ctrl_pkg.vhd
+END

@@ -1,0 +1,22 @@
+# Output products list for <afifo_32_k7>
+afifo_32_k7.asy
+afifo_32_k7.gise
+afifo_32_k7.ngc
+afifo_32_k7.vhd
+afifo_32_k7.vho
+afifo_32_k7.xco
+afifo_32_k7.xise
+afifo_32_k7_flist.txt
+afifo_32_k7_ste\example_design\afifo_32_k7_top.ucf
+afifo_32_k7_ste\example_design\afifo_32_k7_top.vhd
+afifo_32_k7_ste\example_design\afifo_32_k7_top.xdc
+afifo_32_k7_ste\implement\implement.bat
+afifo_32_k7_ste\implement\implement.sh
+afifo_32_k7_ste\implement\planAhead_rdn.bat
+afifo_32_k7_ste\implement\planAhead_rdn.sh
+afifo_32_k7_ste\implement\planAhead_rdn.tcl
+afifo_32_k7_ste\implement\xst.prj
+afifo_32_k7_ste\implement\xst.scr
+afifo_32_k7_xmdf.tcl
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

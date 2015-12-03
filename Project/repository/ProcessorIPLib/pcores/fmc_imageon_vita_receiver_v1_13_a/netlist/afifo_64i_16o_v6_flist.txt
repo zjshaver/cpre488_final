@@ -1,0 +1,23 @@
+# Output products list for <afifo_64i_16o_v6>
+_xmsgs\pn_parser.xmsgs
+afifo_64i_16o_v6.asy
+afifo_64i_16o_v6.gise
+afifo_64i_16o_v6.ngc
+afifo_64i_16o_v6.vhd
+afifo_64i_16o_v6.vho
+afifo_64i_16o_v6.xco
+afifo_64i_16o_v6.xise
+afifo_64i_16o_v6_flist.txt
+afifo_64i_16o_v6_ste\example_design\afifo_64i_16o_v6_top.ucf
+afifo_64i_16o_v6_ste\example_design\afifo_64i_16o_v6_top.vhd
+afifo_64i_16o_v6_ste\example_design\afifo_64i_16o_v6_top.xdc
+afifo_64i_16o_v6_ste\implement\implement.bat
+afifo_64i_16o_v6_ste\implement\implement.sh
+afifo_64i_16o_v6_ste\implement\planAhead_rdn.bat
+afifo_64i_16o_v6_ste\implement\planAhead_rdn.sh
+afifo_64i_16o_v6_ste\implement\planAhead_rdn.tcl
+afifo_64i_16o_v6_ste\implement\xst.prj
+afifo_64i_16o_v6_ste\implement\xst.scr
+afifo_64i_16o_v6_xmdf.tcl
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

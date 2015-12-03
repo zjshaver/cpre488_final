@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src
+END
+fmc_ipmi_fru.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src/fmc_ipmi_fru.c
+END
+fmc_ipmi.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src/fmc_ipmi.c
+END
+fmc_ipmi_fru.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src/fmc_ipmi_fru.h
+END
+fmc_ipmi.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src/fmc_ipmi.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/sw_services/fmc_ipmi_sw_v2_02_a/src/Makefile
+END

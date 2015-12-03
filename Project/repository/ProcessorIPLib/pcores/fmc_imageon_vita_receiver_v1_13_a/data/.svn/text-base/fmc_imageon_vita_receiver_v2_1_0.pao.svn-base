@@ -1,0 +1,125 @@
+##----------------------------------------------------------------
+##      _____
+##     /     \
+##    /____   \____
+##   / \===\   \==/
+##  /___\===\___\/  AVNET
+##       \======/
+##        \====/    
+##---------------------------------------------------------------
+##
+## This design is the property of Avnet.  Publication of this
+## design is not authorized without written consent from Avnet.
+## 
+## Please direct any questions to:  technical.support@avnet.com
+##
+## Disclaimer:
+##    Avnet, Inc. makes no warranty for the use of this code or design.
+##    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+##    any errors, which may appear in this code, nor does it make a commitment
+##    to update the information contained herein. Avnet, Inc specifically
+##    disclaims any implied warranties of fitness for a particular purpose.
+##                     Copyright(c) 2011 Avnet, Inc.
+##                             All rights reserved.
+##
+##----------------------------------------------------------------
+##
+## Create Date:         Sep 15, 2011
+## Design Name:         FMC-IMAGEON
+## Module Name:         fmc_imageon_vita_receiver_v2_1_0.pao
+## Project Name:        FMC-IMAGEON
+## Target Devices:      Virtex-6
+##                      Kintex-7, Zynq
+## Avnet Boards:        FMC-IMAGEON
+##
+## Tool versions:       ISE 14.1
+##
+## Description:         FMC-IMAGEON VITA receiver interface.
+##                      Peripheral Analysis Order
+##
+## Dependencies:        
+##
+## Revision:            Sep 15, 2011: 1.00 Initial version:
+##                                         - VITA SPI controller 
+##                      Sep 22, 2011: 1.01 Added:
+##                                         - ISERDES interface
+##                      Sep 28, 2011: 1.02 Added:
+##                                         - sync channel decoder
+##                                         - crc checker
+##                                         - data remapper
+##                      Oct 20, 2011: 1.03 Modify:
+##                                         - iserdes (use BUFR)
+##                      Oct 21, 2011: 1.04 Added:
+##                                         - fpn prnu correction
+##                      Nov 03, 2011: 1.05 Added:
+##                                         - trigger generator
+##                      Dec 19, 2011: 1.06 Modified:
+##                                         - port to Kintex-7
+##                      Jan 12, 2012: 1.07 Added:
+##                                         - new fsync output port
+##                                         Modify:
+##                                         - syncgen
+##                      Feb 06, 2012: 1.08 Modify:
+##                                         - triggergenerator
+##                                           (new version with debounce logic)
+##                                         - new C_XSVI_DIRECT_OUTPUT option
+##                      Feb 22, 2012: 1.09 Modified
+##                                         - port to Zynq
+##                                         - new C_XSVI_USE_SYNCGEN option
+##                      May 13, 2012: 1.10 Optimize
+##                                         - remove one layer of registers
+##                      May 28, 2012: 1.11 Modify:
+##                                         - host_triggen_cnt_update
+##                                           (for simultaneous update of high/low values)
+##                      Jun 01, 2012: 1.12 Modify:
+##                                         - Move syncgen after demux_fifo
+##                                         - Increase size of demux_fifo
+##                                           (to tolerate jitter in video timing from sensor)
+##                                         - Add programmable delay on framestart for syncgen
+##                      Jul 31, 2012: 1.13 Modify:
+##                                         - define clk200, clk, clk4x with SIGIS = CLK
+##                                         - define reset with SIGIS = RST
+##                                         - port to Spartan-6
+##
+##----------------------------------------------------------------
+
+##############################################################################
+## Filename:          C:/FMC_IMAGEON_Tests/ml605_avnet_hw04/pcores/fmc_imageon_vita_receiver_v1_00_a/data/fmc_imageon_vita_receiver_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Sep 15 13:07:23 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib fmc_imageon_vita_receiver_v1_13_a phsaligner verilog
+lib fmc_imageon_vita_receiver_v1_13_a serdes_1_to_5_diff_data verilog
+lib fmc_imageon_vita_receiver_v1_13_a spi_lowlevel vhdl
+lib fmc_imageon_vita_receiver_v1_13_a spi_seq vhdl
+lib fmc_imageon_vita_receiver_v1_13_a spi_top vhdl
+lib fmc_imageon_vita_receiver_v1_13_a afifo_32 vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_mux vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_sync vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_clocks vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_compare vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_control vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_core vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_datadeser vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_datadeser_s6 vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_idelayctrl vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_interface vhdl
+lib fmc_imageon_vita_receiver_v1_13_a iserdes_interface_s6 vhdl
+lib fmc_imageon_vita_receiver_v1_13_a pck_crc8_d8 vhdl
+lib fmc_imageon_vita_receiver_v1_13_a pck_crc10_d10 vhdl
+lib fmc_imageon_vita_receiver_v1_13_a crc_calc vhdl
+lib fmc_imageon_vita_receiver_v1_13_a crc_comp vhdl
+lib fmc_imageon_vita_receiver_v1_13_a crc_check vhdl
+lib fmc_imageon_vita_receiver_v1_13_a syncchanneldecoder vhdl
+lib fmc_imageon_vita_receiver_v1_13_a remapper vhdl
+lib fmc_imageon_vita_receiver_v1_13_a triggergenerator vhdl
+lib fmc_imageon_vita_receiver_v1_13_a videosyncgen vhdl
+lib fmc_imageon_vita_receiver_v1_13_a afifo_64i_16o vhdl
+lib fmc_imageon_vita_receiver_v1_13_a pulse_regen vhdl
+lib fmc_imageon_vita_receiver_v1_13_a correct_column_fpn_prnu_dsp48e vhdl
+lib fmc_imageon_vita_receiver_v1_13_a fmc_imageon_vita_core vhdl
+lib fmc_imageon_vita_receiver_v1_13_a user_logic vhdl
+lib fmc_imageon_vita_receiver_v1_13_a fmc_imageon_vita_receiver vhdl

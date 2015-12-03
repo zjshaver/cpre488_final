@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/afifo_32_k7_ste/example_design
+END
+afifo_32_k7_top.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/afifo_32_k7_ste/example_design/afifo_32_k7_top.ucf
+END
+afifo_32_k7_top.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/afifo_32_k7_ste/example_design/afifo_32_k7_top.xdc
+END
+afifo_32_k7_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/afifo_32_k7_ste/example_design/afifo_32_k7_top.vhd
+END

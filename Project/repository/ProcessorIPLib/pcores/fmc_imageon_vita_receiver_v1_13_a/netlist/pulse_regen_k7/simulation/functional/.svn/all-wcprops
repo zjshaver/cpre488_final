@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional
+END
+wave_ncsim.sv
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/wave_ncsim.sv
+END
+wave_isim.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/wave_isim.tcl
+END
+simulate_ncsim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/simulate_ncsim.sh
+END
+simulate_isim.bat
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/simulate_isim.bat
+END
+wave_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/wave_mti.do
+END
+simulate_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/pulse_regen_k7/simulation/functional/simulate_mti.do
+END

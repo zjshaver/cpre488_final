@@ -1,0 +1,160 @@
+################################################################################
+# Joseph Zambreno
+# Phillip Jones
+#
+# Department of Electrical and Computer Engineering
+# Iowa State University
+################################################################################
+
+#
+# Misc IO pins
+#
+
+# Switches
+net SWs_8Bits_GPIO<0> LOC = F22 | IOSTANDARD = LVCMOS25;        # SW0
+net SWs_8Bits_GPIO<1> LOC = G22 | IOSTANDARD = LVCMOS25;        # SW1
+net SWs_8Bits_GPIO<2> LOC = H22 | IOSTANDARD = LVCMOS25;        # SW2
+net SWs_8Bits_GPIO<3> LOC = F21 | IOSTANDARD = LVCMOS25;        # SW3
+net SWs_8Bits_GPIO<4> LOC = H19 | IOSTANDARD = LVCMOS25;        # SW4
+net SWs_8Bits_GPIO<5> LOC = H18 | IOSTANDARD = LVCMOS25;        # SW5
+net SWs_8Bits_GPIO<6> LOC = H17 | IOSTANDARD = LVCMOS25;        # SW6
+net SWs_8Bits_GPIO<7> LOC = M15 | IOSTANDARD = LVCMOS25;        # SW7
+
+# Pushbuttons
+net BTNs_5Bits_GPIO<0> LOC = N15 | IOSTANDARD = LVCMOS25;       # BTNL
+net BTNs_5Bits_GPIO<1> LOC = R18 | IOSTANDARD = LVCMOS25;       # BTNR
+net BTNs_5Bits_GPIO<2> LOC = T18 | IOSTANDARD = LVCMOS25;       # BTNU
+net BTNs_5Bits_GPIO<3> LOC = R16 | IOSTANDARD = LVCMOS25;       # BTND
+net BTNs_5Bits_GPIO<4> LOC = P16 | IOSTANDARD = LVCMOS25;       # BTNS
+
+# PS7 pins
+NET processing_system7_0_PS_CLK   LOC = F7 | IOSTANDARD = LVCMOS18;
+NET processing_system7_0_PS_PORB  LOC = B5 | IOSTANDARD = LVCMOS18;
+NET processing_system7_0_PS_SRSTB LOC = C9 | IOSTANDARD = LVCMOS18;
+
+
+#
+# ZedBoard FMC I2C Controller
+#
+NET IIC_FMC_SCL LOC = R7 | IOSTANDARD="LVCMOS25";
+NET IIC_FMC_SDA LOC = U7 | IOSTANDARD="LVCMOS25";
+
+
+#
+# FMC-IMAGEON I/O constraints - FMC Slot 1
+#
+
+# Peripheral I2C chain
+NET fmc_imageon_iic_0_Scl_pin LOC = "J20"; # I2C_MUX_SCL  - FMC1-G18 (LA16_p)
+NET fmc_imageon_iic_0_Sda_pin LOC = "K21"; # I2C_MUX_SDA  - FMC1-G19 (LA16_n)
+NET fmc_imageon_iic_0_Rst_pin LOC = "N20"; # I2C_MUX_RST# - FMC1-D9  (LA01_n_CC)
+
+NET "fmc_imageon_iic_0_Scl_pin" IOSTANDARD="LVCMOS25";
+NET "fmc_imageon_iic_0_Sda_pin" IOSTANDARD="LVCMOS25";
+NET "fmc_imageon_iic_0_Rst_pin" IOSTANDARD="LVCMOS25";
+
+# HDMI input (use SPDIF for passthrough)
+NET fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin     LOC = "A19"; # HDMII_SPDIF - FMC1-H29 (LA24_n)
+NET "fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin" IOSTANDARD="LVCMOS25"; 
+
+# HDMI output
+NET fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin     LOC = "A18"; # HDMIO_SPDIF - FMC1-H28 (LA24_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[8]  LOC = "G19"; # HDMIO_CBCR0 - FMC1-G24 (LA22_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[9]  LOC = "G16"; # HDMIO_CBCR1 - FMC1-H23 (LA19_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[10] LOC = "D20"; # HDMIO_CBCR2 - FMC1-C22 (LA18_p_CC)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[11] LOC = "B20"; # HDMIO_CBCR3 - FMC1-D21 (LA17_n_CC)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[12] LOC = "G15"; # HDMIO_CBCR4 - FMC1-H22 (LA19_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[13] LOC = "G21"; # HDMIO_CBCR5 - FMC1-G22 (LA20_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[14] LOC = "B19"; # HDMIO_CBCR6 - FMC1-D20 (LA17_p_CC)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[15] LOC = "G20"; # HDMIO_CBCR7 - FMC1-G21 (LA20_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[0]  LOC = "C22"; # HDMIO_Y0    - FMC1-G28 (LA25_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[1]  LOC = "D22"; # HDMIO_Y1    - FMC1-G27 (LA25_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[2]  LOC = "E20"; # HDMIO_Y2    - FMC1-H26 (LA21_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[3]  LOC = "D15"; # HDMIO_Y3    - FMC1-D24 (LA23_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[4]  LOC = "E19"; # HDMIO_Y4    - FMC1-H25 (LA21_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[5]  LOC = "F19"; # HDMIO_Y5    - FMC1-G25 (LA22_n)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[6]  LOC = "C20"; # HDMIO_Y6    - FMC1-C23 (LA18_n_CC)
+NET fmc_imageon_hdmi_out_0_io_hdmio_video_pin[7]  LOC = "E15"; # HDMIO_Y7    - FMC1-D23 (LA23_p)
+NET fmc_imageon_hdmi_out_0_io_hdmio_clk_pin       LOC = "C19"; # HDMIO_CLK   - FMC1-G3  (CLK1_M2C_n)
+
+NET "fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin" IOSTANDARD="LVCMOS25"; 
+NET "fmc_imageon_hdmi_out_0_io_hdmio_video_pin*" IOSTANDARD="LVCMOS25"; 
+NET "fmc_imageon_hdmi_out_0_io_hdmio_clk_pin" IOSTANDARD="LVCMOS25"; 
+
+# VITA interface
+#NET fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin    LOC = "L17"; # CAM_CLK_PLL   - FMC1-D17 (LA13_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_reset_n_pin    LOC = "L19"; # CAM_RESET#    - FMC1-H5  (CLK0_M2C_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_trigger_pin[2] LOC = "M17"; # CAM_TRIGGER2  - FMC1-D18 (LA13_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_trigger_pin[1] LOC = "K19"; # CAM_TRIGGER1  - FMC1-C18 (LA14_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_trigger_pin[0] LOC = "K20"; # CAM_TRIGGER0  - FMC1-C19 (LA14_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_monitor_pin[0] LOC = "J16"; # CAM_MONITOR0  - FMC1-H19 (LA15_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_monitor_pin[1] LOC = "J17"; # CAM_MONITOR1  - FMC1-H20 (LA15_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_spi_sclk_pin   LOC = "P20"; # CAM_SPI_SCLK  - FMC1-G15 (LA12_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_spi_ssel_n_pin LOC = "P21"; # CAM_SPI_SSEL# - FMC1-G16 (LA12_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_spi_mosi_pin   LOC = "N17"; # CAM_SPI_MOSI  - FMC1-H16 (LA11_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_spi_miso_pin   LOC = "N18"; # CAM_SPI_MISO  - FMC1-H17 (LA11_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin  LOC = "M19"; # CAM_CLKOUT_P  - FMC1-G6  (LA00_CC_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin  LOC = "M20"; # CAM_CLKOUT_N  - FMC1-G7  (LA00_CC_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_sync_p_pin     LOC = "R19"; # CAM_SYNC_P    - FMC1-C14 (LA10_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_sync_n_pin     LOC = "T19"; # CAM_SYNC_N    - FMC1-C15 (LA10_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[0]  LOC = "R20"; # CAM_D0_P      - FMC1-D14 (LA09_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[0]  LOC = "R21"; # CAM_DO_N      - FMC1-D15 (LA09_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[1]  LOC = "T16"; # CAM_D1_P      - FMC1-H13 (LA07_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[1]  LOC = "T17"; # CAM_D1_N      - FMC1-H14 (LA07_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[2]  LOC = "J21"; # CAM_D2_P      - FMC1-G12 (LA08_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[2]  LOC = "J22"; # CAM_D2_N      - FMC1-G13 (LA08_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[3]  LOC = "J18"; # CAM_D3_P      - FMC1-D11 (LA05_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[3]  LOC = "K18"; # CAM_D3_N      - FMC1-D12 (LA05_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[4]  LOC = "M21"; # CAM_D4_P      - FMC1-H10 (LA04_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[4]  LOC = "M22"; # CAM_D4_N      - FMC1-H11 (LA04_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[5]  LOC = "L21"; # CAM_D5_P      - FMC1-C10 (LA06_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[5]  LOC = "L22"; # CAM_D5_N      - FMC1-C11 (LA06_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[6]  LOC = "N22"; # CAM_D6_P      - FMC1-G9  (LA03_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[6]  LOC = "P22"; # CAM_D6_N      - FMC1-G10 (LA03_N)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_p_pin[7]  LOC = "P17"; # CAM_D7_P      - FMC1-H7  (LA02_P)
+#NET fmc_imageon_vita_receiver_0_io_vita_data_n_pin[7]  LOC = "P18"; # CAM_D7_N      - FMC1-H8  (LA02_N)
+
+#NET "fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin"  IOSTANDARD="LVCMOS25";
+#NET "fmc_imageon_vita_receiver_0_io_vita_reset_n_pin"  IOSTANDARD="LVCMOS25";
+#NET "fmc_imageon_vita_receiver_0_io_vita_trigger*" IOSTANDARD="LVCMOS25";
+#NET "fmc_imageon_vita_receiver_0_io_vita_monitor*" IOSTANDARD="LVCMOS25";
+#NET "fmc_imageon_vita_receiver_0_io_vita_spi_*"    IOSTANDARD="LVCMOS25";   
+
+#NET "fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin" IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+#NET "fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin" IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+#NET "fmc_imageon_vita_receiver_0_io_vita_sync_p_pin"    IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+#NET "fmc_imageon_vita_receiver_0_io_vita_sync_n_pin"    IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+#NET "fmc_imageon_vita_receiver_0_io_vita_data_p*"   IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+#NET "fmc_imageon_vita_receiver_0_io_vita_data_n*"   IOSTANDARD="LVDS_25" | DIFF_TERM = "TRUE";
+
+# Video Clock Synthesizer
+NET fmc_imageon_video_clk1  LOC = "L18"; # VCLK_1 - FMC1-H4  (CLK0_M2C_P)
+NET "fmc_imageon_video_clk*"    IOSTANDARD="LVCMOS25"; 
+
+
+#
+# Miscellaneous Clock Constraints (not really needed)
+#
+NET vid_out_clk TNM_NET = vout_clk;
+TIMESPEC TS_vout_clk = PERIOD vout_clk 148500 kHz;
+
+#NET "fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin" TNM_NET = vita_clkout_p;
+#TIMESPEC TS_CLK_TO_FPGA_P = PERIOD "vita_clkout_p" 375000 kHz HIGH 50%;
+
+NET fmc_imageon_video_clk1 TNM_NET = vclk_clk;
+TIMESPEC TS_vclk_clk = PERIOD vclk_clk 148500 kHz;
+
+NET *axi4lite_0_clk TNM_NET = CLK_50MHz;
+TIMESPEC TS_CLK_IN = PERIOD CLK_50MHz  20 ns;
+
+#NET *clk_200mhz TNM_NET = CLK_200MHz;
+#TIMESPEC TS_CLK_IN = PERIOD CLK_200MHz 5 ns;
+
+
+#
+# False paths (not sure if needed)
+#
+#NET axi4lite_0_clk TNM_NET = axil_clk;   # 50 MHz AXI4-Lite clock
+#NET vita_clk_ref   TNM_NET = vita_clk;
+#TIMESPEC TS_AXIL2VITA = FROM axil_clk TO vita_clk TIG;
+#TIMESPEC TS_VITA2AXIL = FROM vita_clk TO axil_clk TIG;

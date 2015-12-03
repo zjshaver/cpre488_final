@@ -1,0 +1,9 @@
+run
+-ifmt MIXED
+-top mmcm_iserdes_divider_v6_exdes
+-p xc6vlx240t-ff1156-1
+-ifn xst.prj
+-ofn mmcm_iserdes_divider_v6_exdes
+-keep_hierarchy soft 
+-equivalent_register_removal no 
+-max_fanout 65535

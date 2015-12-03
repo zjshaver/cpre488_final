@@ -1,0 +1,796 @@
+17:32:05 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp ../../repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+../../repository -pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 51008416 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 51008816 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 51009216 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 51009616 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 51012416 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 51013616 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 51014016 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 51014416 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 51010816 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 51012816 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 51014816 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 51011616 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 51012016 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 51015216 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 51015616 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 51016016 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 51016416 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 51016816 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 51010016 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 51017216 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 51010416 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 51008016 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 51011216 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+17:38:21 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp ../../repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+../../repository -pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 45550752 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 45551152 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 45551552 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 45551952 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 45554752 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 45555952 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 45556352 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 45556752 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 45553152 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 45555152 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 45557152 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 45553952 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 45554352 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 45557552 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 45557952 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 45558352 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 45558752 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 45559152 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 45552352 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 45559552 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 45552752 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 45550352 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 45553552 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+17:46:55 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+17:47:16 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+18:01:49 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/ff.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+18:01:50 **** Clean-only build of project device-tree_bsp_0 ****
+18:01:50 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm -rf ps7_cortexa9_0
+18:01:50 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp ../../repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+../../repository -pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 59649408 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 59649808 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 59650208 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 59650608 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 59639440 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 59640640 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 59641040 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 59641440 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 59651808 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 59639840 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 59641840 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 59652608 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 59653008 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 59642240 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 59642640 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 59643040 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 59643440 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 59643840 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 59651008 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 59644240 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 59651408 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 59649008 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 59652208 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+18:01:54 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+18:02:19 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/ff.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+18:02:19 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 

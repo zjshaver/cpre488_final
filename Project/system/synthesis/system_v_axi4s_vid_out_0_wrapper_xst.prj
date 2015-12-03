@@ -1,0 +1,7 @@
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out_v2_00_a_bridge_async_fifo_2.v
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out_v2_00_a_out_coupler.v
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out_v2_00_a_vid_out_formatter.v
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out_v2_00_a_out_sync.v
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out_v2_00_a_axi4s_vid_out_top.v
+verilog v_axi4s_vid_out_v2_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/v_axi4s_vid_out_v2_00_a/hdl/verilog/v_axi4s_vid_out.v
+verilog work ../hdl/system_v_axi4s_vid_out_0_wrapper.v

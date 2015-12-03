@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl
+END
+zplate_pkg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_pkg.vhd
+END
+zplate_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd
+END
+tpg_core.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd
+END
+axi_tpg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd
+END
+user_logic.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd
+END
+AWGN.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/AWGN.vhd
+END

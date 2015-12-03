@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/cpre488/!svn/ver/7/MP-2/system/data
+END
+system.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cpre488/!svn/ver/7/MP-2/system/data/system.ucf
+END
+system.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cpre488/!svn/ver/7/MP-2/system/data/system.xdc
+END
+ps7_system_prj.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cpre488/!svn/ver/7/MP-2/system/data/ps7_system_prj.xml
+END
+ps7_constraints.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cpre488/!svn/ver/7/MP-2/system/data/ps7_constraints.ucf
+END
+ps7_constraints.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cpre488/!svn/ver/7/MP-2/system/data/ps7_constraints.xdc
+END

@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/zynq_fsbl.elf
+	/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit
+	/home/zjshaver/cpre488/cpre488_final/Project/bootimage/u-boot.elf
+}

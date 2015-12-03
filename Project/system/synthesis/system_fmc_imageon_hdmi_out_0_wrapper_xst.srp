@@ -1,0 +1,459 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/zjshaver/cpre488/MP-2/system/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_fmc_imageon_hdmi_out_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/zjshaver/cpre488/MP-2/system/pcores/" "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_fmc_imageon_hdmi_out_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_fmc_imageon_hdmi_out_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd" into library fmc_imageon_hdmi_out_v1_05_a
+Parsing entity <fmc_imageon_hdmi_out>.
+Parsing architecture <rtl> of entity <fmc_imageon_hdmi_out>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/adv7511_embed_syncs.vhd" into library fmc_imageon_hdmi_out_v1_05_a
+Parsing entity <adv7511_embed_syncs>.
+Parsing architecture <rtl> of entity <adv7511_embed_syncs>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/system_fmc_imageon_hdmi_out_0_wrapper.vhd" into library work
+Parsing entity <system_fmc_imageon_hdmi_out_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_fmc_imageon_hdmi_out_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_fmc_imageon_hdmi_out_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <fmc_imageon_hdmi_out> (architecture <rtl>) with generics from library <fmc_imageon_hdmi_out_v1_05_a>.
+
+Elaborating entity <adv7511_embed_syncs> (architecture <rtl>) from library <fmc_imageon_hdmi_out_v1_05_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/adv7511_embed_syncs.vhd" Line 89: Assignment to vblank_df ignored, since the identifier is never used
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd" Line 238: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd" Line 272: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd" Line 306: Comparison between arrays of unequal length always returns FALSE.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_fmc_imageon_hdmi_out_0_wrapper>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/system/hdl/system_fmc_imageon_hdmi_out_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_fmc_imageon_hdmi_out_0_wrapper> synthesized.
+
+Synthesizing Unit <fmc_imageon_hdmi_out>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/fmc_imageon_hdmi_out.vhd".
+        C_DATA_WIDTH = 16
+        C_FAMILY = "zynq"
+    Set property "IOB = FORCE" for signal <hdmio_video_o>.
+    Set property "IOB = FORCE" for signal <hdmio_spdif_o>.
+    Set property "IOB = FORCE" for signal <hdmio_clk_o>.
+    Found 1-bit register for signal <hblank_d>.
+    Found 1-bit register for signal <active_video_d>.
+    Found 16-bit register for signal <video_data_d>.
+    Found 16-bit register for signal <video_r>.
+    Found 1-bit register for signal <hdmio_spdif_o>.
+    Found 16-bit register for signal <hdmio_video_o>.
+    Found 1-bit register for signal <hdmio_spdif_t>.
+    Found 16-bit register for signal <hdmio_video_t>.
+    Found 1-bit register for signal <vblank_d>.
+    Found 39-bit register for signal <debug_o>.
+    WARNING:Xst:2404 -  FFs/Latches <debug_o<39:39>> (without init value) have a constant value of 0 in block <fmc_imageon_hdmi_out>.
+    Summary:
+	inferred 108 D-type flip-flop(s).
+Unit <fmc_imageon_hdmi_out> synthesized.
+
+Synthesizing Unit <adv7511_embed_syncs>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_out_v1_05_a/hdl/vhdl/adv7511_embed_syncs.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <active_video_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 6-bit register for signal <hblank_d>.
+    Found 16-bit register for signal <video_data_d1>.
+    Found 16-bit register for signal <video_data_d2>.
+    Found 16-bit register for signal <video_data_d3>.
+    Found 16-bit register for signal <video_data_d4>.
+    Found 16-bit register for signal <video_data_d5>.
+    Found 16-bit register for signal <video_data_d6>.
+    Found 16-bit register for signal <video_data_df>.
+    Found 6-bit register for signal <vblank_d>.
+    Summary:
+	inferred 124 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <adv7511_embed_syncs> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 19
+ 1-bit register                                        : 5
+ 16-bit register                                       : 11
+ 39-bit register                                       : 1
+ 6-bit register                                        : 2
+# Multiplexers                                         : 6
+ 16-bit 2-to-1 multiplexer                             : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <vblank_d_2> of sequential type is unconnected in block <adv7511_embed_syncs>.
+WARNING:Xst:2677 - Node <vblank_d_3> of sequential type is unconnected in block <adv7511_embed_syncs>.
+WARNING:Xst:2677 - Node <vblank_d_4> of sequential type is unconnected in block <adv7511_embed_syncs>.
+WARNING:Xst:2677 - Node <vblank_d_5> of sequential type is unconnected in block <adv7511_embed_syncs>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 228
+ Flip-Flops                                            : 228
+# Multiplexers                                         : 6
+ 16-bit 2-to-1 multiplexer                             : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <debug_o_17> (without init value) has a constant value of 0 in block <fmc_imageon_hdmi_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <debug_o_18> (without init value) has a constant value of 0 in block <fmc_imageon_hdmi_out>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <hdmio_video_t_0> in Unit <fmc_imageon_hdmi_out> is equivalent to the following 16 FFs/Latches, which will be removed : <hdmio_video_t_1> <hdmio_video_t_2> <hdmio_video_t_3> <hdmio_video_t_4> <hdmio_video_t_5> <hdmio_video_t_6> <hdmio_video_t_7> <hdmio_video_t_8> <hdmio_video_t_9> <hdmio_video_t_10> <hdmio_video_t_11> <hdmio_video_t_12> <hdmio_video_t_13> <hdmio_video_t_14> <hdmio_video_t_15> <hdmio_spdif_t> 
+
+Optimizing unit <system_fmc_imageon_hdmi_out_0_wrapper> ...
+
+Optimizing unit <fmc_imageon_hdmi_out> ...
+
+Optimizing unit <adv7511_embed_syncs> ...
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_20> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_0> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_21> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_1> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_22> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_2> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_23> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_3> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_24> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_4> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_30> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_10> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_25> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_5> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_31> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_11> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_26> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_6> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_32> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_12> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_27> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_7> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_33> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_13> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_28> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_8> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_34> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_14> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_29> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_9> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_35> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d1_15> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_37> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/hblank_d_1> 
+INFO:Xst:2261 - The FF/Latch <fmc_imageon_hdmi_out_0/debug_o_38> in Unit <system_fmc_imageon_hdmi_out_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <fmc_imageon_hdmi_out_0/embed_syncs_l/vblank_d_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_fmc_imageon_hdmi_out_0_wrapper, actual ratio is 0.
+FlipFlop fmc_imageon_hdmi_out_0/embed_syncs_l/hblank_d_2 has been replicated 1 time(s)
+FlipFlop fmc_imageon_hdmi_out_0/embed_syncs_l/hblank_d_4 has been replicated 1 time(s)
+FlipFlop fmc_imageon_hdmi_out_0/embed_syncs_l/hblank_d_5 has been replicated 1 time(s)
+FlipFlop fmc_imageon_hdmi_out_0/hdmio_video_t_0 has been replicated 16 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <system_fmc_imageon_hdmi_out_0_wrapper> :
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_38>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_37>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_36>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_35>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_34>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_33>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_32>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_31>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_30>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_29>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_28>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_27>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_26>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_25>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_24>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_23>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_22>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_21>.
+	Found 2-bit shift register for signal <fmc_imageon_hdmi_out_0/debug_o_20>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_15>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_14>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_13>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_12>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_11>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_10>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_9>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_8>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_7>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_6>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_5>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_4>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_3>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_2>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_1>.
+	Found 4-bit shift register for signal <fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d6_0>.
+Unit <system_fmc_imageon_hdmi_out_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+# Shift Registers                                      : 35
+ 2-bit shift register                                  : 19
+ 4-bit shift register                                  : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_fmc_imageon_hdmi_out_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 67
+#      GND                         : 1
+#      INV                         : 1
+#      LUT5                        : 8
+#      LUT6                        : 40
+#      MUXF7                       : 16
+#      VCC                         : 1
+# FlipFlops/Latches                : 146
+#      FD                          : 109
+#      FDE                         : 35
+#      ODDR                        : 2
+# Shift Registers                  : 35
+#      SRLC16E                     : 35
+# IO Buffers                       : 18
+#      OBUFT                       : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             129  out of  106400     0%  
+ Number of Slice LUTs:                   84  out of  53200     0%  
+    Number used as Logic:                49  out of  53200     0%  
+    Number used as Memory:               35  out of  17400     0%  
+       Number used as SRL:               35
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    138
+   Number with an unused Flip Flop:       9  out of    138     6%  
+   Number with an unused LUT:            54  out of    138    39%  
+   Number of fully used LUT-FF pairs:    75  out of    138    54%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          82
+ Number of bonded IOBs:                  18  out of    200     9%  
+    IOB Flip Flops/Latches:              17
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                               | Load  |
+-----------------------------------+-----------------------------------------------------+-------+
+clk                                | NONE(fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_t)| 181   |
+-----------------------------------+-----------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 1.439ns (Maximum Frequency: 694.821MHz)
+   Minimum input arrival time before clock: 1.019ns
+   Maximum output required time after clock: 1.006ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.439ns (frequency: 694.821MHz)
+  Total number of paths / destination ports: 404 / 140
+-------------------------------------------------------------------------
+Delay:               1.439ns (Levels of Logic = 2)
+  Source:            fmc_imageon_hdmi_out_0/debug_o_37 (FF)
+  Destination:       fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d2_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: fmc_imageon_hdmi_out_0/debug_o_37 to fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d2_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             26   0.282   0.876  fmc_imageon_hdmi_out_0/debug_o_37 (fmc_imageon_hdmi_out_0/debug_o_37)
+     LUT6:I1->O            1   0.053   0.000  fmc_imageon_hdmi_out_0/embed_syncs_l/Mmux_hblank_d[5]_video_data_d1[15]_wide_mux_0_OUT31_G (N3)
+     MUXF7:I1->O           1   0.217   0.000  fmc_imageon_hdmi_out_0/embed_syncs_l/Mmux_hblank_d[5]_video_data_d1[15]_wide_mux_0_OUT31 (fmc_imageon_hdmi_out_0/embed_syncs_l/hblank_d[5]_video_data_d1[15]_wide_mux_0_OUT<11>)
+     FD:D                      0.011          fmc_imageon_hdmi_out_0/embed_syncs_l/video_data_d2_11
+    ----------------------------------------
+    Total                      1.439ns (0.563ns logic, 0.876ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Offset:              1.019ns (Levels of Logic = 1)
+  Source:            oe (PAD)
+  Destination:       fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_t (FF)
+  Destination Clock: clk rising
+
+  Data Path: oe to fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_t
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O             19   0.067   0.518  fmc_imageon_hdmi_out_0/oe_n1_INV_0 (fmc_imageon_hdmi_out_0/hdmio_video_t_0_rstpot)
+     ODDR:D1                   0.434          fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_t
+    ----------------------------------------
+    Total                      1.019ns (0.501ns logic, 0.518ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 73 / 55
+-------------------------------------------------------------------------
+Offset:              1.006ns (Levels of Logic = 1)
+  Source:            fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_o (FF)
+  Destination:       io_hdmio_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_o to io_hdmio_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.399  fmc_imageon_hdmi_out_0/V6_GEN.ODDR_hdmio_clk_o (fmc_imageon_hdmi_out_0/hdmio_clk_o)
+     OBUFT:I->O                0.000          fmc_imageon_hdmi_out_0/OBUFT_hdmio_clk (io_hdmio_clk)
+    ----------------------------------------
+    Total                      1.006ns (0.607ns logic, 0.399ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.439|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+WARNING:Xst:615 - Flip flop associated with net fmc_imageon_hdmi_out_0/hdmio_clk_o not found, property IOB not attached.
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.79 secs
+ 
+--> 
+
+
+Total memory usage is 621352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

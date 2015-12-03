@@ -1,0 +1,1065 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/zjshaver/cpre488/MP-2/system/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_v_cresample_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/zjshaver/cpre488/MP-2/system/pcores/" "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_v_cresample_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_v_cresample_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/proc_common_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/ipif_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/family_support.vhd" into library v_tc_v5_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/pselect_f.vhd" into library v_tc_v5_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/counter_f.vhd" into library v_tc_v5_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/address_decoder.vhd" into library v_tc_v5_00_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" into library v_tc_v5_00_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/axi4s_control.vhd" into library v_tc_v5_00_a
+Parsing entity <axi4s_control>.
+Parsing architecture <synth> of entity <axi4s_control>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/debug.vhd" into library v_tc_v5_00_a
+Parsing entity <debug>.
+Parsing architecture <rtl> of entity <debug>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_ctrl_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <video_ctrl_pkg>.
+Parsing package body <video_ctrl_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/axi_lite_ipif.vhd" into library v_tc_v5_00_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_detector>.
+Parsing architecture <rtl> of entity <tc_detector>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_generator>.
+Parsing architecture <rtl> of entity <tc_generator>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_top.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_top>.
+Parsing architecture <rtl> of entity <tc_top>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_clock_cross.vhd" into library v_tc_v5_00_a
+Parsing entity <video_clock_cross>.
+Parsing architecture <RTL> of entity <video_clock_cross>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_ctrl.vhd" into library v_tc_v5_00_a
+Parsing package <hwt_pkg>.
+Parsing entity <hwt>.
+Parsing architecture <rtl> of entity <hwt>.
+Parsing entity <video_ctrl>.
+Parsing architecture <RTL> of entity <video_ctrl>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd" into library v_tc_v5_00_a
+Parsing entity <v_tc>.
+Parsing architecture <IMP> of entity <v_tc>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/GenXlib_utils.vhd" into library v_cresample_v3_00_a
+Parsing package <genxlib_utils>.
+Parsing package body <genxlib_utils>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/GenXlib_arch.vhd" into library v_cresample_v3_00_a
+Parsing entity <d1b>.
+Parsing architecture <RTL> of entity <d1b>.
+Parsing entity <DELAY>.
+Parsing architecture <RTL> of entity <delay>.
+Parsing entity <delay_sclr>.
+Parsing architecture <RTL> of entity <delay_sclr>.
+Parsing entity <radd_sub_sclr_yes>.
+Parsing architecture <rtl> of entity <radd_sub_sclr_yes>.
+Parsing entity <radd_sub_sclr_no>.
+Parsing architecture <rtl> of entity <radd_sub_sclr_no>.
+Parsing entity <radd_sub_sclr>.
+Parsing architecture <rtl> of entity <radd_sub_sclr>.
+Parsing entity <get_round_addend>.
+Parsing architecture <rtl> of entity <get_round_addend>.
+Parsing entity <round>.
+Parsing architecture <rtl> of entity <round>.
+Parsing entity <mult>.
+Parsing architecture <rtl> of entity <mult>.
+Parsing entity <madd>.
+Parsing architecture <rtl> of entity <madd>.
+Parsing entity <macc>.
+Parsing architecture <rtl> of entity <macc>.
+Parsing entity <max_sat>.
+Parsing architecture <rtl> of entity <max_sat>.
+Parsing entity <min_sat>.
+Parsing architecture <rtl> of entity <min_sat>.
+Parsing entity <barrel_shift>.
+Parsing architecture <rtl> of entity <barrel_shift>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_utils.vhd" into library v_cresample_v3_00_a
+Parsing package <memxlib_utils>.
+Parsing package body <memxlib_utils>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" into library v_cresample_v3_00_a
+Parsing entity <dp_ram>.
+Parsing architecture <rtl> of entity <dp_ram>.
+Parsing entity <sp_ram>.
+Parsing architecture <rtl> of entity <sp_ram>.
+Parsing entity <synch_fifo>.
+Parsing architecture <rtl> of entity <synch_fifo>.
+Parsing entity <ObjFifo_cons_ctl>.
+Parsing architecture <structure> of entity <objfifo_cons_ctl>.
+Parsing entity <ObjFifo_prod_ctl>.
+Parsing architecture <structure> of entity <objfifo_prod_ctl>.
+Parsing entity <ObjFifo>.
+Parsing architecture <structure> of entity <objfifo>.
+Parsing entity <dp_ram_async>.
+Parsing architecture <rtl> of entity <dp_ram_async>.
+Parsing entity <ObjFifoAsync>.
+Parsing architecture <structure> of entity <objfifoasync>.
+Parsing entity <FIFO2ObjFifo>.
+Parsing architecture <RTL> of entity <fifo2objfifo>.
+Parsing architecture <RTL_fast> of entity <fifo2objfifo>.
+Parsing entity <ObjFifo2FIFO>.
+Parsing architecture <RTL> of entity <objfifo2fifo>.
+Parsing architecture <RTL_fast> of entity <objfifo2fifo>.
+Parsing entity <async_fifo>.
+Parsing architecture <rtl> of entity <async_fifo>.
+Parsing entity <synch_fifo_fallthru>.
+Parsing architecture <rtl> of entity <synch_fifo_fallthru>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/ImageXlib_utils.vhd" into library v_cresample_v3_00_a
+Parsing package <imagexlib_utils>.
+Parsing package body <imagexlib_utils>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/ImageXlib_arch.vhd" into library v_cresample_v3_00_a
+Parsing entity <dp_bram>.
+Parsing architecture <rtl> of entity <dp_bram>.
+Parsing entity <linebuffer>.
+Parsing architecture <rtl> of entity <linebuffer>.
+Parsing entity <base_single_linebuffer>.
+Parsing architecture <rtl> of entity <base_single_linebuffer>.
+Parsing entity <base_2d_linebuffer>.
+Parsing architecture <rtl> of entity <base_2d_linebuffer>.
+Parsing entity <h_pipe>.
+Parsing architecture <rtl> of entity <h_pipe>.
+Parsing entity <mc_h_pipe>.
+Parsing architecture <rtl> of entity <mc_h_pipe>.
+Parsing entity <active_delay>.
+Parsing architecture <rtl> of entity <active_delay>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/cresample_pkg.vhd" into library v_cresample_v3_00_a
+Parsing package <cresample_pkg>.
+Parsing package body <cresample_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/cresample_timing.vhd" into library v_cresample_v3_00_a
+Parsing entity <cresample_timing>.
+Parsing architecture <RTL> of entity <cresample_timing>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert444to422.vhd" into library v_cresample_v3_00_a
+Parsing entity <convert444to422>.
+Parsing architecture <rtl> of entity <convert444to422>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert422to444.vhd" into library v_cresample_v3_00_a
+Parsing entity <convert422to444>.
+Parsing architecture <rtl> of entity <convert422to444>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert422to420.vhd" into library v_cresample_v3_00_a
+Parsing entity <convert422to420>.
+Parsing architecture <rtl> of entity <convert422to420>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert420to422.vhd" into library v_cresample_v3_00_a
+Parsing entity <convert420to422>.
+Parsing architecture <rtl> of entity <convert420to422>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/axis_input_buffer.vhd" into library v_cresample_v3_00_a
+Parsing entity <axis_input_buffer>.
+Parsing architecture <rtl> of entity <axis_input_buffer>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/axis_output_buffer.vhd" into library v_cresample_v3_00_a
+Parsing entity <axis_output_buffer>.
+Parsing architecture <rtl> of entity <axis_output_buffer>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/debug.vhd" into library v_cresample_v3_00_a
+Parsing entity <debug>.
+Parsing architecture <rtl> of entity <debug>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/cresample_core.vhd" into library v_cresample_v3_00_a
+Parsing entity <cresample_core>.
+Parsing architecture <rtl> of entity <cresample_core>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/cresample_top.vhd" into library v_cresample_v3_00_a
+Parsing entity <cresample_top>.
+Parsing architecture <synth> of entity <cresample_top>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/v_cresample.vhd" into library v_cresample_v3_00_a
+Parsing entity <v_cresample>.
+Parsing architecture <synth> of entity <v_cresample>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_cresample_0_wrapper.vhd" into library work
+Parsing entity <system_v_cresample_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_v_cresample_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_v_cresample_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <v_cresample> (architecture <synth>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:871 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/v_cresample.vhd" Line 354: Using initial value ("00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000") for time_status_regs since it is never assigned
+WARNING:HDLCompiler:871 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/v_cresample.vhd" Line 357: Using initial value
+   ("00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","0000
+   0000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","0000000000
+   0000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000") for core_status_regs since it is never assigned
+
+Elaborating entity <video_ctrl> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:746 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" Line 301: Range is empty (null range)
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+INFO:HDLCompiler:679 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" Line 458. Case statement is complete. others clause is never selected
+
+Elaborating entity <video_clock_cross> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <video_clock_cross> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:746 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_ctrl.vhd" Line 1100: Range is empty (null range)
+
+Elaborating entity <cresample_top> (architecture <synth>) with generics from library <v_cresample_v3_00_a>.
+
+Elaborating entity <axis_input_buffer> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+
+Elaborating entity <synch_fifo> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 667: Assignment to depth_vector ignored, since the identifier is never used
+
+Elaborating entity <dp_ram> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 232: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 247: Assignment to addra_int ignored, since the identifier is never used
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 263: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 278: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 312: Comparison between arrays of unequal length always returns FALSE.
+
+Elaborating entity <axi4s_control> (architecture <synth>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <cresample_core> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+
+Elaborating entity <convert444to422> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:871 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert444to422.vhd" Line 103: Using initial value '1' for logic1 since it is never assigned
+WARNING:HDLCompiler:871 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert444to422.vhd" Line 163: Using initial value 8192 for rounding_offset since it is never assigned
+WARNING:HDLCompiler:746 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert444to422.vhd" Line 228: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/convert444to422.vhd" Line 313: Range is empty (null range)
+
+Elaborating entity <debug> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+INFO:HDLCompiler:679 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/debug.vhd" Line 327. Case statement is complete. others clause is never selected
+
+Elaborating entity <axis_output_buffer> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+
+Elaborating entity <synch_fifo_fallthru> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 2819: Assignment to zero_vector ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 2820: Assignment to one_vector ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 2824: Assignment to depth_vector ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 2825: Assignment to depth_vector_minus_one ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/MemXLib_arch.vhd" Line 2826: Assignment to depth_vector_minus_two ignored, since the identifier is never used
+
+Elaborating entity <dp_ram> (architecture <rtl>) with generics from library <v_cresample_v3_00_a>.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_cresample_v3_00_a/hdl/vhdl/v_cresample.vhd" Line 351: Net <genr_status_regs[0][31]> does not have a driver.
+INFO:coreutil - Full license for component <v_cresample> allows you to use this component. This license does not give you access to source code implementing this component.
+
+   The license for this core was generated for zambreno on 01/28/2015It is the responsibility of the Licensee of this core to adhere to all terms and conditions of the applicable license agreement when using this core.
+
+
+INFO:coreutil - Full license for component <v_cresample> allows you to use this component. This license does not give you access to source code implementing this component.
+
+   The license for this core was generated for zambreno on 01/28/2015It is the responsibility of the Licensee of this core to adhere to all terms and conditions of the applicable license agreement when using this core.
+
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_v_cresample_0_wrapper>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_cresample_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_v_cresample_0_wrapper> synthesized.
+
+Synthesizing Secure Unit <v_cresample>.
+Secure Unit <v_cresample> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_v_cresample_0_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_v_cresample_0_wrapper, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_v_cresample_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2736
+#      GND                         : 1
+#      INV                         : 39
+#      LUT1                        : 160
+#      LUT2                        : 72
+#      LUT3                        : 70
+#      LUT4                        : 121
+#      LUT5                        : 98
+#      LUT6                        : 1654
+#      MUXCY                       : 283
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 233
+# FlipFlops/Latches                : 1774
+#      FD                          : 287
+#      FDE                         : 55
+#      FDR                         : 1089
+#      FDRE                        : 317
+#      FDS                         : 8
+#      FDSE                        : 18
+# RAMS                             : 44
+#      RAM32X1D                    : 44
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1774  out of  106400     1%  
+ Number of Slice LUTs:                 2302  out of  53200     4%  
+    Number used as Logic:              2214  out of  53200     4%  
+    Number used as Memory:               88  out of  17400     0%  
+       Number used as RAM:               88
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3189
+   Number with an unused Flip Flop:    1415  out of   3189    44%  
+   Number with an unused LUT:           887  out of   3189    27%  
+   Number of fully used LUT-FF pairs:   887  out of   3189    27%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         164
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                               | Load  |
+-----------------------------------+---------------------------------------------------------------------+-------+
+aclk                               | NONE(v_cresample_0/cresample_top_inst/axi_in_fifo/s_axis_tready_int)| 1696  |
+s_axi_aclk                         | NONE(v_cresample_0/U_VIDEO_CTRL/write_ack_d1)                       | 122   |
+-----------------------------------+---------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.336ns (Maximum Frequency: 230.627MHz)
+   Minimum input arrival time before clock: 3.530ns
+   Maximum output required time after clock: 1.122ns
+   Maximum combinational path delay: 0.067ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'aclk'
+  Clock period: 4.336ns (frequency: 230.627MHz)
+  Total number of paths / destination ports: 80373 / 3720
+-------------------------------------------------------------------------
+Delay:               4.336ns (Levels of Logic = 32)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      aclk rising
+  Destination Clock: aclk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            4   0.282   0.433  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.320   0.602  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out          18   0.015   0.525  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.320   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      4.336ns (2.363ns logic, 1.973ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 's_axi_aclk'
+  Clock period: 1.943ns (frequency: 514.668MHz)
+  Total number of paths / destination ports: 277 / 170
+-------------------------------------------------------------------------
+Delay:               1.943ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      s_axi_aclk rising
+  Destination Clock: s_axi_aclk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           11   0.282   0.791  sec_inst (sec_net)
+     SEC:in->out           3   0.053   0.753  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      1.943ns (0.399ns logic, 1.544ns route)
+                                       (20.5% logic, 79.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'aclk'
+  Total number of paths / destination ports: 4731 / 1836
+-------------------------------------------------------------------------
+Offset:              3.530ns (Levels of Logic = 8)
+  Source:            aclken (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: aclk rising
+
+  Data Path: aclken to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'v_cresample_0:aclken'
+     SEC:in->out           3   0.053   0.427  sec_inst (sec_net)
+     SEC:in->out           5   0.053   0.512  sec_inst (sec_net)
+     SEC:in->out           2   0.053   0.608  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           8   0.053   0.459  sec_inst (sec_net)
+     SEC:in->out          13   0.053   0.493  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      3.530ns (0.618ns logic, 2.912ns route)
+                                       (17.5% logic, 82.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 's_axi_aclk'
+  Total number of paths / destination ports: 43 / 19
+-------------------------------------------------------------------------
+Offset:              1.073ns (Levels of Logic = 3)
+  Source:            s_axi_awvalid (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: s_axi_aclk rising
+
+  Data Path: s_axi_awvalid to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'v_cresample_0:s_axi_awvalid'
+     SEC:in->out           3   0.053   0.753  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      1.073ns (0.320ns logic, 0.753ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'aclk'
+  Total number of paths / destination ports: 36 / 30
+-------------------------------------------------------------------------
+Offset:              1.122ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       intc_if<0> (PAD)
+  Source Clock:      aclk rising
+
+  Data Path: sec_inst to intc_if<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           30   0.282   0.787  sec_inst (sec_net)
+     SEC:in->out          12   0.053   0.000  sec_inst (sec_net)
+     end scope: 'v_cresample_0:intc_if<0>'
+    ----------------------------------------
+    Total                      1.122ns (0.335ns logic, 0.787ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 's_axi_aclk'
+  Total number of paths / destination ports: 42 / 39
+-------------------------------------------------------------------------
+Offset:              0.847ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       s_axi_awready (PAD)
+  Source Clock:      s_axi_aclk rising
+
+  Data Path: sec_inst to s_axi_awready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            5   0.282   0.512  sec_inst (sec_net)
+     SEC:in->out           0   0.053   0.000  sec_inst (sec_net)
+     end scope: 'v_cresample_0:s_axi_awready'
+    ----------------------------------------
+    Total                      0.847ns (0.335ns logic, 0.512ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.067ns (Levels of Logic = 2)
+  Source:            aclken (PAD)
+  Destination:       intc_if<0> (PAD)
+
+  Data Path: aclken to intc_if<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'v_cresample_0:aclken'
+     SEC:in->out          12   0.053   0.000  sec_inst (sec_net)
+     end scope: 'v_cresample_0:intc_if<0>'
+    ----------------------------------------
+    Total                      0.067ns (0.067ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock aclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+aclk           |    4.336|         |         |         |
+s_axi_aclk     |    0.692|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock s_axi_aclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+aclk           |    0.698|         |         |         |
+s_axi_aclk     |    1.943|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 62.00 secs
+Total CPU time to Xst completion: 57.30 secs
+ 
+--> 
+
+
+Total memory usage is 752364 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

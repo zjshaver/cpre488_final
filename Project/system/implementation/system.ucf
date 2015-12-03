@@ -1,0 +1,33 @@
+################################################################################
+# Joseph Zambreno
+# Phillip Jones
+#
+# Department of Electrical and Computer Engineering
+# Iowa State University
+################################################################################
+
+#
+# Misc IO pins
+#
+
+# Switches
+net SWs_8Bits_GPIO<0> LOC = F22 | IOSTANDARD = LVCMOS25;        # SW0
+net SWs_8Bits_GPIO<1> LOC = G22 | IOSTANDARD = LVCMOS25;        # SW1
+net SWs_8Bits_GPIO<2> LOC = H22 | IOSTANDARD = LVCMOS25;        # SW2
+net SWs_8Bits_GPIO<3> LOC = F21 | IOSTANDARD = LVCMOS25;        # SW3
+net SWs_8Bits_GPIO<4> LOC = H19 | IOSTANDARD = LVCMOS25;        # SW4
+net SWs_8Bits_GPIO<5> LOC = H18 | IOSTANDARD = LVCMOS25;        # SW5
+net SWs_8Bits_GPIO<6> LOC = H17 | IOSTANDARD = LVCMOS25;        # SW6
+net SWs_8Bits_GPIO<7> LOC = M15 | IOSTANDARD = LVCMOS25;        # SW7
+
+# Pushbuttons
+net BTNs_5Bits_GPIO<0> LOC = N15 | IOSTANDARD = LVCMOS25;       # BTNL
+net BTNs_5Bits_GPIO<1> LOC = R18 | IOSTANDARD = LVCMOS25;       # BTNR
+net BTNs_5Bits_GPIO<2> LOC = T18 | IOSTANDARD = LVCMOS25;       # BTNU
+net BTNs_5Bits_GPIO<3> LOC = R16 | IOSTANDARD = LVCMOS25;       # BTND
+net BTNs_5Bits_GPIO<4> LOC = P16 | IOSTANDARD = LVCMOS25;       # BTNS
+
+# PS7 pins
+NET processing_system7_0_PS_CLK   LOC = F7 | IOSTANDARD = LVCMOS18;
+NET processing_system7_0_PS_PORB  LOC = B5 | IOSTANDARD = LVCMOS18;
+NET processing_system7_0_PS_SRSTB LOC = C9 | IOSTANDARD = LVCMOS18;

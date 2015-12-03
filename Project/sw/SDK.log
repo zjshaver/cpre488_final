@@ -1,0 +1,36 @@
+17:01:13.827 INFO  - Processing command line option -hwspec /home/zjshaver/cpre488/cpre488_final/MP2/system/SDK/SDK_Export/hw/system.xml. 
+17:11:01.246 INFO  - Saving repository preferences. 
+17:11:01.253 INFO  - Reading in cores from local repositories: 
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib 
+17:11:01.271 INFO  - Updating libgen.options on all BSP projects. 
+17:11:01.273 INFO  - Cleaning BSP projects in the workspace. 
+17:12:43.422 INFO  - Saving repository preferences. 
+17:12:43.483 INFO  - Reading in cores from local repositories: 
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository 
+17:12:43.527 INFO  - Updating libgen.options on all BSP projects. 
+17:12:43.528 INFO  - Cleaning BSP projects in the workspace. 
+17:12:44.987 INFO  - Saving repository preferences. 
+17:16:03.557 INFO  - Saving repository preferences. 
+17:16:17.276 INFO  - Saving repository preferences. 
+17:16:18.329 INFO  - Saving repository preferences. 
+17:29:48.297 INFO  - Restoring local repository preferences: 
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository 
+17:30:23.204 INFO  - Saving repository preferences. 
+17:30:27.122 INFO  - Saving repository preferences. 
+17:30:52.031 INFO  - 'device-tree' is a board support package for an OS for which applications cannot be developed within SDK. 
+17:30:52.033 INFO  - You can configure and build project 'device-tree_bsp_0' within SDK at will, but have to export it into the appropriate third party environment to develop applications. 
+17:30:52.943 WARN  - Unable to determine location of documentation for OS device-tree. 
+17:38:48.716 INFO  - Restoring local repository preferences: 
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib
+		 /home/zjshaver/cpre488/cpre488_final/MP2/repository 
+17:58:21.045 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+17:58:25.292 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+17:58:25.328 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+17:58:25.337 WARN  - Unable to determine location of documentation for OS . 
+17:58:25.363 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+17:58:25.519 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+18:01:20.642 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+18:01:50.719 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+18:01:55.896 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 

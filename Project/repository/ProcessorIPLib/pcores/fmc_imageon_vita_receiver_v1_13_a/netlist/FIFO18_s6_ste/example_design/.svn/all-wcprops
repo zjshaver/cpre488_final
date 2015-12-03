@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/FIFO18_s6_ste/example_design
+END
+FIFO18_s6_top.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/FIFO18_s6_ste/example_design/FIFO18_s6_top.ucf
+END
+FIFO18_s6_top.xdc
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/FIFO18_s6_ste/example_design/FIFO18_s6_top.xdc
+END
+FIFO18_s6_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/cpre488/!svn/ver/10/MP-3/repository/ProcessorIPLib/pcores/fmc_imageon_vita_receiver_v1_13_a/netlist/FIFO18_s6_ste/example_design/FIFO18_s6_top.vhd
+END

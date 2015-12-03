@@ -1,0 +1,532 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/zjshaver/cpre488/MP-2/system/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_v_tc_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/zjshaver/cpre488/MP-2/system/pcores/" "/home/zjshaver/cpre488/MP-2/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_v_tc_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_v_tc_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/proc_common_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/ipif_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/family_support.vhd" into library v_tc_v5_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/pselect_f.vhd" into library v_tc_v5_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/counter_f.vhd" into library v_tc_v5_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/address_decoder.vhd" into library v_tc_v5_00_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" into library v_tc_v5_00_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/axi4s_control.vhd" into library v_tc_v5_00_a
+Parsing entity <axi4s_control>.
+Parsing architecture <synth> of entity <axi4s_control>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/debug.vhd" into library v_tc_v5_00_a
+Parsing entity <debug>.
+Parsing architecture <rtl> of entity <debug>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_ctrl_pkg.vhd" into library v_tc_v5_00_a
+Parsing package <video_ctrl_pkg>.
+Parsing package body <video_ctrl_pkg>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/axi_lite_ipif.vhd" into library v_tc_v5_00_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_detector>.
+Parsing architecture <rtl> of entity <tc_detector>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_generator>.
+Parsing architecture <rtl> of entity <tc_generator>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_top.vhd" into library v_tc_v5_00_a
+Parsing entity <tc_top>.
+Parsing architecture <rtl> of entity <tc_top>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_clock_cross.vhd" into library v_tc_v5_00_a
+Parsing entity <video_clock_cross>.
+Parsing architecture <RTL> of entity <video_clock_cross>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/video_ctrl.vhd" into library v_tc_v5_00_a
+Parsing package <hwt_pkg>.
+Parsing entity <hwt>.
+Parsing architecture <rtl> of entity <hwt>.
+Parsing entity <video_ctrl>.
+Parsing architecture <RTL> of entity <video_ctrl>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd" into library v_tc_v5_00_a
+Parsing entity <v_tc>.
+Parsing architecture <IMP> of entity <v_tc>.
+Parsing VHDL file "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_tc_0_wrapper.vhd" into library work
+Parsing entity <system_v_tc_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_v_tc_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_v_tc_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <v_tc> (architecture <IMP>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:871 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd" Line 628: Using initial value ("00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000","00000000000000000000000000000000") for core_status_regs since it is never assigned
+
+Elaborating entity <video_ctrl> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:746 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" Line 301: Range is empty (null range)
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <v_tc_v5_00_a>.
+INFO:HDLCompiler:679 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/slave_attachment.vhd" Line 458. Case statement is complete. others clause is never selected
+
+Elaborating entity <video_clock_cross> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <video_clock_cross> (architecture <RTL>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <tc_top> (architecture <rtl>) with generics from library <v_tc_v5_00_a>.
+
+Elaborating entity <tc_detector> (architecture <rtl>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 1880: Assignment to det_v1fp_start_hori_int2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 186: Net <active_chroma_d> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 195: Net <active_chroma_d2> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 196: Net <active_chroma_d3> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 225: Net <det_v1fp_start_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 226: Net <det_v1sync_start_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 227: Net <det_v1bp_start_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 229: Net <det_v1chroma_start_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 237: Net <det_v1fp_start_hori_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 238: Net <det_v1sync_start_hori_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 239: Net <det_v1bp_start_hori_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 240: Net <det_v1active_start_hori_int[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_detector.vhd" Line 297: Net <det_field_id_pol_int> does not have a driver.
+
+Elaborating entity <tc_generator> (architecture <rtl>) with generics from library <v_tc_v5_00_a>.
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 300: Assignment to hblank_hold ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 301: Assignment to hsync_hold ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 837: Assignment to htotal_1_v ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 266: Net <v1total[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 267: Net <v1fp_start[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 268: Net <v1sync_start[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 269: Net <v1bp_start[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 270: Net <v1active_start[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 271: Net <v1chroma_start[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 278: Net <v1fp_start_hori[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 279: Net <v1sync_start_hori[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 280: Net <v1bp_start_hori[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/tc_generator.vhd" Line 281: Net <v1active_start_hori[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd" Line 622: Net <genr_status_regs[0][31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/zjshaver/cpre488/MP-2/system/hdl/xlpp/v_tc_v5_00_a/hdl/vhdl/v_tc.vhd" Line 625: Net <time_status_regs[0][31]> does not have a driver.
+INFO:coreutil - Full license for component <v_tc> allows you to use this component. This license does not give you access to source code implementing this component.
+
+   The license for this core was generated for zambreno on 01/28/2015It is the responsibility of the Licensee of this core to adhere to all terms and conditions of the applicable license agreement when using this core.
+
+
+INFO:coreutil - Full license for component <v_tc> allows you to use this component. This license does not give you access to source code implementing this component.
+
+   The license for this core was generated for zambreno on 01/28/2015It is the responsibility of the Licensee of this core to adhere to all terms and conditions of the applicable license agreement when using this core.
+
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_v_tc_0_wrapper>.
+    Related source file is "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_tc_0_wrapper.vhd".
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_tc_0_wrapper.vhd" line 131: Output port <intc_if> of the instance <v_tc_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/zjshaver/cpre488/MP-2/system/hdl/system_v_tc_0_wrapper.vhd" line 131: Output port <field_id_out> of the instance <v_tc_0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <system_v_tc_0_wrapper> synthesized.
+
+Synthesizing Secure Unit <v_tc>.
+Secure Unit <v_tc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <param_cfg<16:11>> (without init value) have a constant value of 0 in block <tc_generator>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_v_tc_0_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_v_tc_0_wrapper, actual ratio is 3.
+
+Final Macro Processing ...
+
+Processing Secure Unit <v_tc_0>.
+Secure Unit <v_tc_0> processed.
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_v_tc_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3414
+#      GND                         : 1
+#      INV                         : 36
+#      LUT1                        : 64
+#      LUT2                        : 72
+#      LUT3                        : 411
+#      LUT4                        : 703
+#      LUT5                        : 223
+#      LUT6                        : 1198
+#      MUXCY                       : 344
+#      MUXF7                       : 65
+#      MUXF8                       : 24
+#      VCC                         : 1
+#      XORCY                       : 272
+# FlipFlops/Latches                : 2091
+#      FD                          : 181
+#      FDE                         : 2
+#      FDR                         : 913
+#      FDRE                        : 784
+#      FDS                         : 17
+#      FDSE                        : 194
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2091  out of  106400     1%  
+ Number of Slice LUTs:                 2709  out of  53200     5%  
+    Number used as Logic:              2707  out of  53200     5%  
+    Number used as Memory:                2  out of  17400     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3755
+   Number with an unused Flip Flop:    1664  out of   3755    44%  
+   Number with an unused LUT:          1046  out of   3755    27%  
+   Number of fully used LUT-FF pairs:  1045  out of   3755    27%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         123
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                 | Load  |
+-----------------------------------+---------------------------------------+-------+
+clk                                | NONE(v_tc_0/gen_encoding_2)           | 1971  |
+S_AXI_ACLK                         | NONE(v_tc_0/U_VIDEO_CTRL/write_ack_d1)| 122   |
+-----------------------------------+---------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.881ns (Maximum Frequency: 257.634MHz)
+   Minimum input arrival time before clock: 2.130ns
+   Maximum output required time after clock: 0.847ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.881ns (frequency: 257.634MHz)
+  Total number of paths / destination ports: 54490 / 4399
+-------------------------------------------------------------------------
+Delay:               3.881ns (Levels of Logic = 6)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out          187   0.282   0.911  sec_inst (sec_net)
+     SEC:in->out          12   0.053   0.707  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      3.881ns (0.611ns logic, 3.270ns route)
+                                       (15.7% logic, 84.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 1.839ns (frequency: 543.774MHz)
+  Total number of paths / destination ports: 277 / 170
+-------------------------------------------------------------------------
+Delay:               1.839ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           11   0.282   0.791  sec_inst (sec_net)
+     SEC:in->out           3   0.053   0.649  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      1.839ns (0.399ns logic, 1.440ns route)
+                                       (21.7% logic, 78.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3805 / 1979
+-------------------------------------------------------------------------
+Offset:              2.130ns (Levels of Logic = 4)
+  Source:            hblank_in (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: clk rising
+
+  Data Path: hblank_in to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'v_tc_0:hblank_in'
+     SEC:in->out          31   0.053   0.637  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out          12   0.480   0.471  sec_inst (sec_net)
+     SEC:in                    0.200          sec_inst
+    ----------------------------------------
+    Total                      2.130ns (1.022ns logic, 1.108ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 47 / 19
+-------------------------------------------------------------------------
+Offset:              1.065ns (Levels of Logic = 3)
+  Source:            S_AXI_ARVALID (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_ARVALID to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'v_tc_0:s_axi_arvalid'
+     SEC:in->out           2   0.053   0.745  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      1.065ns (0.320ns logic, 0.745ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 42 / 39
+-------------------------------------------------------------------------
+Offset:              0.847ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       S_AXI_AWREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: sec_inst to S_AXI_AWREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            5   0.282   0.512  sec_inst (sec_net)
+     SEC:in->out           0   0.053   0.000  sec_inst (sec_net)
+     end scope: 'v_tc_0:s_axi_awready'
+    ----------------------------------------
+    Total                      0.847ns (0.335ns logic, 0.512ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 1)
+  Source:            sec_inst (FF)
+  Destination:       fsync_out<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sec_inst to fsync_out<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out          179   0.282   0.000  sec_inst (sec_net)
+     end scope: 'v_tc_0:fsync_out<0>'
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    1.839|         |         |         |
+clk            |    0.698|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    0.692|         |         |         |
+clk            |    3.881|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 57.00 secs
+Total CPU time to Xst completion: 55.75 secs
+ 
+--> 
+
+
+Total memory usage is 717608 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

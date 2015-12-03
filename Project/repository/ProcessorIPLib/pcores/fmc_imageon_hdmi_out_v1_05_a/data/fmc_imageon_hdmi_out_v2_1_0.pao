@@ -1,0 +1,54 @@
+##----------------------------------------------------------------
+##      _____
+##     /     \
+##    /____   \____
+##   / \===\   \==/
+##  /___\===\___\/  AVNET
+##       \======/
+##        \====/    
+##---------------------------------------------------------------
+##
+## This design is the property of Avnet.  Publication of this
+## design is not authorized without written consent from Avnet.
+## 
+## Please direct any questions to:  technical.support@avnet.com
+##
+## Disclaimer:
+##    Avnet, Inc. makes no warranty for the use of this code or design.
+##    This code is provided  "As Is". Avnet, Inc assumes no responsibility for
+##    any errors, which may appear in this code, nor does it make a commitment
+##    to update the information contained herein. Avnet, Inc specifically
+##    disclaims any implied warranties of fitness for a particular purpose.
+##                     Copyright(c) 2011 Avnet, Inc.
+##                             All rights reserved.
+##
+##----------------------------------------------------------------
+##
+## Create Date:         Aug 31, 2011
+## Design Name:         FMC-IMAGEON
+## Module Name:         fmc_imageon_hdmi_out_v2_1_0.pao
+## Project Name:        FMC-IMAGEON
+## Target Devices:      Spartan-6, Virtex-6
+##                      Artix-7, Kintex-7, Virtex-7, Zynq
+## Avnet Boards:        FMC-IMAGEON
+##
+## Tool versions:       ISE 13.4
+##
+## Description:         FMC-IMAGEON HDMI output interface.
+##                      Peripheral Analysis Order
+##
+## Dependencies:        
+##
+## Revision:            Aug 31, 2011: 1.01 Initial version
+##                      Nov 11, 2011: 1.02 Add logic to embed syncs
+##                                         Add vblank/hblank ports
+##                                         Remove vsync/hsync ports
+##                                         Add embed_syncs port
+##                      Dec 05, 2011: 1.03 Place embed logic in sub-module
+##                      Feb 06, 2012: 1.04 Add IOB attribute to "FORCE"
+##                      Feb 21, 2012: 1.05 Add support for Zynq
+##
+##----------------------------------------------------------------
+
+lib fmc_imageon_hdmi_out_v1_05_a fmc_imageon_hdmi_out vhdl
+lib fmc_imageon_hdmi_out_v1_05_a adv7511_embed_syncs vhdl

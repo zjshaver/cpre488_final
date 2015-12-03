@@ -1,0 +1,23 @@
+# Output products list for <FIFO18_s6>
+FIFO18_s6.asy
+FIFO18_s6.gise
+FIFO18_s6.ngc
+FIFO18_s6.vhd
+FIFO18_s6.vho
+FIFO18_s6.xco
+FIFO18_s6.xise
+FIFO18_s6_flist.txt
+FIFO18_s6_ste\example_design\FIFO18_s6_top.ucf
+FIFO18_s6_ste\example_design\FIFO18_s6_top.vhd
+FIFO18_s6_ste\example_design\FIFO18_s6_top.xdc
+FIFO18_s6_ste\implement\implement.bat
+FIFO18_s6_ste\implement\implement.sh
+FIFO18_s6_ste\implement\planAhead_rdn.bat
+FIFO18_s6_ste\implement\planAhead_rdn.sh
+FIFO18_s6_ste\implement\planAhead_rdn.tcl
+FIFO18_s6_ste\implement\xst.prj
+FIFO18_s6_ste\implement\xst.scr
+FIFO18_s6_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

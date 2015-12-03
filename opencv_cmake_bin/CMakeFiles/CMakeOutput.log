@@ -485,3 +485,18 @@ Linking C executable cmTryCompileExec
 gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
 
 
+Determining if the include file linux/videodev2.h exists passed with the following output:
+Change Dir: /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc   -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/remote/Xilinx/14.6/EDK/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc    -mthumb -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fvisibility=hidden   -O3 -DNDEBUG  -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles/CMakeTmp'
+
+

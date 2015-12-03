@@ -105,9 +105,9 @@ CMakeFiles/opencv_perf_tests.dir/all: modules/core/CMakeFiles/opencv_perf_core.d
 CMakeFiles/opencv_perf_tests.dir/all: modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/photo/CMakeFiles/opencv_perf_photo.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/video/CMakeFiles/opencv_perf_video.dir/all
-CMakeFiles/opencv_perf_tests.dir/all: modules/videoio/CMakeFiles/opencv_perf_videoio.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/objdetect/CMakeFiles/opencv_perf_objdetect.dir/all
+CMakeFiles/opencv_perf_tests.dir/all: modules/videoio/CMakeFiles/opencv_perf_videoio.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/superres/CMakeFiles/opencv_perf_superres.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/features2d/CMakeFiles/opencv_perf_features2d.dir/all
 CMakeFiles/opencv_perf_tests.dir/all: modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/all
@@ -148,11 +148,11 @@ CMakeFiles/opencv_tests.dir/all: modules/imgproc/CMakeFiles/opencv_test_imgproc.
 CMakeFiles/opencv_tests.dir/all: modules/ml/CMakeFiles/opencv_test_ml.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/photo/CMakeFiles/opencv_test_photo.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/video/CMakeFiles/opencv_test_video.dir/all
-CMakeFiles/opencv_tests.dir/all: modules/shape/CMakeFiles/opencv_test_shape.dir/all
-CMakeFiles/opencv_tests.dir/all: modules/videoio/CMakeFiles/opencv_test_videoio.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/all
-CMakeFiles/opencv_tests.dir/all: modules/highgui/CMakeFiles/opencv_test_highgui.dir/all
+CMakeFiles/opencv_tests.dir/all: modules/shape/CMakeFiles/opencv_test_shape.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/objdetect/CMakeFiles/opencv_test_objdetect.dir/all
+CMakeFiles/opencv_tests.dir/all: modules/videoio/CMakeFiles/opencv_test_videoio.dir/all
+CMakeFiles/opencv_tests.dir/all: modules/highgui/CMakeFiles/opencv_test_highgui.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/superres/CMakeFiles/opencv_test_superres.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/features2d/CMakeFiles/opencv_test_features2d.dir/all
 CMakeFiles/opencv_tests.dir/all: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/all
@@ -3305,13 +3305,13 @@ modules/imgcodecs/preinstall:
 # Target rules for target modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir
 
 # All Build rule for target.
-modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
-modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libwebp/CMakeFiles/libwebp.dir/all
-modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/zlib/CMakeFiles/zlib.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libtiff/CMakeFiles/libtiff.dir/all
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libjpeg/CMakeFiles/libjpeg.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libjasper/CMakeFiles/libjasper.dir/all
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libwebp/CMakeFiles/libwebp.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/libpng/CMakeFiles/libpng.dir/all
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: 3rdparty/openexr/CMakeFiles/IlmImf.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: modules/hal/CMakeFiles/opencv_hal.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: modules/core/CMakeFiles/opencv_core.dir/all
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all: modules/imgproc/CMakeFiles/opencv_imgproc.dir/all
@@ -4490,8 +4490,8 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/imgproc/CMakeFile
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/ml/CMakeFiles/opencv_ml.dir/all
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/all
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/highgui/CMakeFiles/opencv_highgui.dir/all
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/videoio/CMakeFiles/opencv_videoio.dir/all
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/objdetect/CMakeFiles/pch_Generate_opencv_objdetect.dir/all
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/all: modules/videoio/CMakeFiles/opencv_videoio.dir/all
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend
 	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/zjshaver/cpre488/cpre488_final/opencv_cmake_bin/CMakeFiles  47

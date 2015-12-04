@@ -14536,3 +14536,73 @@ Creating bit map...
 Saving bit stream in "system.bit".
 Bitstream generation is complete.
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Running DRCs...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v4_01_a/data/processing_system7_v2_1_0.mpd line 314 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding PARAMETER C_BASEFAMILY value to zynq - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is overriding PARAMETER C_BASEFAMILY value to zynq - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_vdma, INSTANCE:axi_vdma_0 - tcl is overriding PARAMETER C_PRMRY_IS_ACLK_ASYNC value to 0 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/data/axi_vdma_v2_1_0.mpd line 86 
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is not specified. Clock DRCs will not be performed for IPs connected to that clock port, unless they are connected through the clock generator IP. 
+
+INFO:EDK:3716 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Tools are updating the value of the parameter C_INTERCONNECT_M_AXI_MM2S_IS_ACLK_ASYNC to '1'. 
+INFO:EDK:3716 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Tools are updating the value of the parameter C_INTERCONNECT_M_AXI_S2MM_IS_ACLK_ASYNC to '1'. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) BTNs_5Bits	axi4lite_0
+  (0x41240000-0x4124ffff) SWs_8Bits	axi4lite_0
+  (0x43000000-0x4300ffff) axi_vdma_0	axi4lite_0
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 3 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 2 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is overriding PARAMETER C_FCLK_CLK1_BUF value to FALSE - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v4_01_a/data/processing_system7_v2_1_0.mpd line 345 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is overriding PARAMETER C_FCLK_CLK2_BUF value to FALSE - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v4_01_a/data/processing_system7_v2_1_0.mpd line 346 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding PARAMETER C_RANGE_CHECK value to 1 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_interconnect_1; no DECERR checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is overriding PARAMETER C_RANGE_CHECK value to 0 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Done!
+
+********************************************************************************
+At Local date and time: Thu Dec  3 10:17:48 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.filters
+Done writing Tab View settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.gui

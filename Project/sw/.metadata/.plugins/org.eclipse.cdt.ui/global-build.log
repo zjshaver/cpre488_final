@@ -794,3 +794,2585 @@ arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
   68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
 Finished building: zynq_fsbl.elf.size
  
+10:18:08 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/ff.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+10:18:09 **** Clean-only build of project device-tree_bsp_0 ****
+10:18:09 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm -rf ps7_cortexa9_0
+10:18:10 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp ../../repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+../../repository -pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 59096128 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 59096528 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 59096928 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 59097328 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 59086160 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 59087360 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 59087760 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 59088160 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 59098528 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 59086560 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 59088560 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 59099328 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 59099728 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 59088960 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 59089360 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 59089760 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 59090160 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 59090560 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 59097728 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 59090960 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 59098128 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 59095728 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 59098928 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+10:18:14 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp /home/zjshaver/cpre488/cpre488_final/MP2/repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
+/home/zjshaver/cpre488/cpre488_final/MP2/repository -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+10:18:36 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+10:19:14 **** Clean-only build of project device-tree_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:19:14 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:19:15 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 38504992 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 38505392 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 38505792 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 38506192 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 38508992 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 38510192 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 38510592 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 38510992 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 38507392 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 38509392 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 38511392 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 38508192 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 38508592 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 38511792 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 38512192 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 38512592 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 38512992 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 38513392 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 38506592 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 38513792 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 38506992 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 38504592 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 38507792 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+10:19:19 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+make: *** Deleting file `ps7_cortexa9_0/lib/libxil.a'
+make: *** [ps7_cortexa9_0/lib/libxil.a] Terminated
+Command canceled
+10:19:35 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/ff.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+10:19:36 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm: cannot remove `ps7_cortexa9_0/libsrc/gpiops_v1_01_a/src': Directory not empty
+make: *** [clean] Error 1
+10:19:36 **** Clean-only build of project device-tree_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:19:37 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 61004320 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 61004720 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 61005120 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 61005520 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 61008320 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 61009520 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 61009920 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 61010320 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 61006720 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 61008720 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 61010720 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 61007520 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 61007920 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 61011120 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 61011520 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 61011920 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 61012320 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 61012720 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 61005920 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 61013120 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 61006320 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 61003920 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 61007120 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+10:19:40 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+10:20:01 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+12:46:40 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 54237408 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 54237808 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 54238208 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 54238608 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 54241408 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 54242608 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 54243008 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 54243408 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 54239808 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 54241808 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 54243808 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 54240608 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 54241008 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 54244208 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 54244608 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 54245008 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 54245408 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 54245808 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 54239008 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 54246208 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 54239408 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 54237008 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 54240208 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+12:46:44 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+Finished building libraries
+12:46:44 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+In file included from ../src/camera_app.c:19:0:
+../src/camera_app.h:27:21: fatal error: fmc_iic.h: No such file or directory
+compilation terminated.
+make: *** [src/camera_app.o] Error 1
+12:47:00 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+../src/fsbl_hooks.c: In function 'FsblHookBeforeHandoff':
+../src/fsbl_hooks.c:150:2: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+In file included from ../src/camera_app.c:19:0:
+../src/camera_app.h:27:21: fatal error: fmc_iic.h: No such file or directory
+compilation terminated.
+make: *** [src/camera_app.o] Error 1
+12:47:37 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+In file included from ../src/camera_app.c:19:0:
+../src/camera_app.h:66:2: error: unknown type name 'fmc_iic_t'
+../src/camera_app.h:67:2: error: unknown type name 'fmc_iic_t'
+../src/camera_app.h:69:2: error: unknown type name 'fmc_imageon_t'
+../src/camera_app.h:70:2: error: unknown type name 'fmc_imageon_vita_receiver_t'
+../src/camera_app.h:71:2: error: unknown type name 'fmc_imageon_vita_status_t'
+../src/camera_app.h:72:2: error: unknown type name 'fmc_imageon_vita_status_t'
+../src/camera_app.h:74:2: error: unknown type name 'XVtc'
+../src/camera_app.h:75:2: error: unknown type name 'XVtc'
+../src/camera_app.h:88:2: error: unknown type name 'fmc_imageon_video_timing_t'
+../src/camera_app.h:141:15: error: unknown type name 'XVtc'
+../src/camera_app.h:142:17: error: unknown type name 'XVtc'
+../src/camera_app.h:145:15: error: unknown type name 'XVtc'
+../src/camera_app.h:146:17: error: unknown type name 'XVtc'
+../src/camera_app.h:147:17: error: unknown type name 'XVtc'
+../src/camera_app.c: In function 'camera_config_init':
+../src/camera_app.c:39:37: error: 'XPAR_IIC_FMC_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:39:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/camera_app.c:40:40: error: 'XPAR_FMC_IMAGEON_IIC_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:41:39: error: 'XPAR_FMC_IMAGEON_VITA_RECEIVER_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:42:29: error: 'XPAR_CFA_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:43:30: error: 'XPAR_CRESAMPLE_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:44:32: error: 'XPAR_RGB2YCRCB_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:47:35: error: 'XPAR_V_TC_0_DEVICE_ID' undeclared (first use in this function)
+../src/camera_app.c:48:35: error: 'XPAR_V_TC_1_DEVICE_ID' undeclared (first use in this function)
+../src/camera_app.c: In function 'camera_loop':
+../src/camera_app.c:81:20: warning: unused variable 'pMM2S_Mem' [-Wunused-variable]
+../src/camera_app.c:80:20: warning: unused variable 'pS2MM_Mem' [-Wunused-variable]
+make: *** [src/camera_app.o] Error 1
+12:48:00 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+../src/camera_app.c: In function 'camera_config_init':
+../src/camera_app.c:39:37: error: 'XPAR_IIC_FMC_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:39:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/camera_app.c:40:40: error: 'XPAR_FMC_IMAGEON_IIC_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:41:39: error: 'XPAR_FMC_IMAGEON_VITA_RECEIVER_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:42:29: error: 'XPAR_CFA_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:43:30: error: 'XPAR_CRESAMPLE_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:44:32: error: 'XPAR_RGB2YCRCB_0_BASEADDR' undeclared (first use in this function)
+../src/camera_app.c:47:35: error: 'XPAR_V_TC_0_DEVICE_ID' undeclared (first use in this function)
+../src/camera_app.c:48:35: error: 'XPAR_V_TC_1_DEVICE_ID' undeclared (first use in this function)
+../src/camera_app.c: In function 'camera_loop':
+../src/camera_app.c:81:20: warning: unused variable 'pMM2S_Mem' [-Wunused-variable]
+../src/camera_app.c:80:20: warning: unused variable 'pS2MM_Mem' [-Wunused-variable]
+make: *** [src/camera_app.o] Error 1
+12:49:15 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+../src/camera_app.c: In function 'camera_loop':
+../src/camera_app.c:72:20: warning: unused variable 'pMM2S_Mem' [-Wunused-variable]
+../src/camera_app.c:71:20: warning: unused variable 'pS2MM_Mem' [-Wunused-variable]
+Finished building: ../src/camera_app.c
+ 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:40:4: warning: implicit declaration of function 'fmc_iic_axi_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:40:35: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:48:4: warning: implicit declaration of function 'fmc_ipmi_detect' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:48:32: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:48:64: error: 'FMC_ID_ALL' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:48:64: note: each undeclared identifier is reported only once for each function it appears in
+../src/fmc_imageon_utils.c:49:7: warning: implicit declaration of function 'fmc_ipmi_enable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:49:32: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:49:49: error: 'FMC_ID_SLOT1' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:58:35: error: 'camera_config_t' has no member named 'fmc_imageon_iic'
+../src/fmc_imageon_utils.c:65:4: warning: implicit declaration of function 'fmc_imageon_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:65:29: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:65:68: error: 'camera_config_t' has no member named 'fmc_imageon_iic'
+../src/fmc_imageon_utils.c:66:4: warning: implicit declaration of function 'fmc_imageon_vclk_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:66:35: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:67:4: warning: implicit declaration of function 'fmc_imageon_vclk_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:67:37: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:67:53: error: 'FMC_IMAGEON_VCLK_FREQ_148_500_000' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:77:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:78:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:79:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:80:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:81:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:82:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:83:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:84:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:85:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:86:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:87:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:88:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:89:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:90:10: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:95:19: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:96:19: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:97:19: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:97:52: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:98:19: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:100:17: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:101:17: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:102:17: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:102:50: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:103:17: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:112:4: warning: implicit declaration of function 'vgen_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:112:23: error: 'camera_config_t' has no member named 'vtc_tpg'
+../src/fmc_imageon_utils.c:113:4: warning: implicit declaration of function 'vgen_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:113:25: error: 'camera_config_t' has no member named 'vtc_tpg'
+../src/fmc_imageon_utils.c:118:4: warning: implicit declaration of function 'fmc_imageon_hdmio_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:118:41: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:118:68: error: 'camera_config_t' has no member named 'hdmio_timing'
+../src/fmc_imageon_utils.c:127:4: warning: implicit declaration of function 'fmc_imageon_vita_receiver_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:127:44: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:128:10: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:129:4: warning: implicit declaration of function 'fmc_imageon_vita_receiver_spi_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:129:50: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:133:4: warning: implicit declaration of function 'vdet_init' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:133:22: error: 'camera_config_t' has no member named 'vtc_ipipe'
+../src/fmc_imageon_utils.c:134:4: warning: implicit declaration of function 'vdet_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:134:24: error: 'camera_config_t' has no member named 'vtc_ipipe'
+../src/fmc_imageon_utils.c:169:4: warning: implicit declaration of function 'CRESAMPLE_Enable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable_tpg':
+../src/fmc_imageon_utils.c:220:4: warning: implicit declaration of function 'xTPG_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:223:4: warning: implicit declaration of function 'XTPG_mReadSlaveReg0' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:224:4: warning: implicit declaration of function 'XTPG_mWriteSlaveReg0' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:225:4: warning: implicit declaration of function 'ZPlate_config' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:228:4: warning: implicit declaration of function 'XTPG_mReadSlaveReg1' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:230:5: warning: implicit declaration of function 'XTPG_mWriteSlaveReg1' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable_vita':
+../src/fmc_imageon_utils.c:248:4: warning: implicit declaration of function 'fmc_imageon_vita_receiver_sensor_initialize' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:248:63: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:248:81: error: 'SENSOR_INIT_ENABLE' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:257:4: warning: implicit declaration of function 'fmc_imageon_vita_receiver_sensor_1080P60' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:257:59: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:264:4: warning: implicit declaration of function 'fmc_imageon_vita_receiver_get_status' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:264:49: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:264:75: error: 'camera_config_t' has no member named 'vita_status_t1'
+../src/fmc_imageon_utils.c:266:49: error: 'camera_config_t' has no member named 'vita_receiver'
+../src/fmc_imageon_utils.c:266:75: error: 'camera_config_t' has no member named 'vita_status_t2'
+../src/fmc_imageon_utils.c:269:23: error: 'camera_config_t' has no member named 'vita_status_t1'
+../src/fmc_imageon_utils.c:270:24: error: 'camera_config_t' has no member named 'vita_status_t1'
+../src/fmc_imageon_utils.c:271:22: error: 'camera_config_t' has no member named 'vita_status_t2'
+../src/fmc_imageon_utils.c:271:57: error: 'camera_config_t' has no member named 'vita_status_t1'
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable_ipipe':
+../src/fmc_imageon_utils.c:288:4: warning: implicit declaration of function 'RGB_Reset' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:289:4: warning: implicit declaration of function 'RGB_ClearReset' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:290:4: warning: implicit declaration of function 'RGB_Enable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:293:4: warning: implicit declaration of function 'CFA_Reset' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:294:4: warning: implicit declaration of function 'CFA_ClearReset' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:295:4: warning: implicit declaration of function 'CFA_Enable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:296:4: warning: implicit declaration of function 'CFA_RegUpdateDisable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:297:4: warning: implicit declaration of function 'CFA_WriteReg' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:297:41: error: 'CFA_BAYER_PHASE' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:298:4: warning: implicit declaration of function 'CFA_RegUpdateEnable' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c: In function 'enable_ssc':
+../src/fmc_imageon_utils.c:319:2: warning: implicit declaration of function 'fmc_imageon_iic_mux' [-Wimplicit-function-declaration]
+../src/fmc_imageon_utils.c:319:31: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:319:47: error: 'FMC_IMAGEON_I2C_SELECT_VID_CLK' undeclared (first use in this function)
+../src/fmc_imageon_utils.c:322:9: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:322:47: error: 'camera_config_t' has no member named 'fmc_imageon'
+../src/fmc_imageon_utils.c:322:67: error: 'FMC_IMAGEON_VID_CLK_ADDR' undeclared (first use in this function)
+../src/fmc_imageon_utils.c: In function 'reset_dcms':
+../src/fmc_imageon_utils.c:337:8: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:337:42: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:339:8: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:339:43: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:343:11: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:343:45: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:345:11: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+../src/fmc_imageon_utils.c:345:46: error: 'camera_config_t' has no member named 'fmc_ipmi_iic'
+make: *** [src/fmc_imageon_utils.o] Error 1
+12:51:08 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/fmc_imageon_utils.o: In function `fmc_imageon_enable':
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:41: undefined reference to `reset_dcms'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:47: undefined reference to `vres_detect'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:48: undefined reference to `vres_get_name'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:51: undefined reference to `fmc_imageon_enable_tpg'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:56: undefined reference to `fmc_imageon_enable_vita'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:58: undefined reference to `fmc_imageon_enable_ipipe'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:62: undefined reference to `enable_ssc'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:84: undefined reference to `vfb_common_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:88: undefined reference to `vfb_tx_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:99: undefined reference to `vfb_rx_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:111: undefined reference to `vfb_dump_registers'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:112: undefined reference to `vfb_check_errors'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:113: undefined reference to `vfb_dump_registers'
+collect2: error: ld returned 1 exit status
+make: *** [zynq_fsbl.elf] Error 1
+12:51:55 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/fmc_imageon_utils.o: In function `fmc_imageon_enable':
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:62: undefined reference to `vfb_common_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:66: undefined reference to `vfb_tx_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:77: undefined reference to `vfb_rx_init'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:89: undefined reference to `vfb_dump_registers'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:90: undefined reference to `vfb_check_errors'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/fmc_imageon_utils.c:91: undefined reference to `vfb_dump_registers'
+collect2: error: ld returned 1 exit status
+make: *** [zynq_fsbl.elf] Error 1
+12:54:46 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/video_frame_buffer.o: In function `vfb_rx_setup':
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:122: undefined reference to `vres_get_height'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:123: undefined reference to `vres_get_width'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:126: undefined reference to `vres_get_height'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:127: undefined reference to `vres_get_width'
+./src/video_frame_buffer.o: In function `vfb_tx_setup':
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:191: undefined reference to `vres_get_height'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:192: undefined reference to `vres_get_width'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:195: undefined reference to `vres_get_height'
+/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/Debug/../src/video_frame_buffer.c:196: undefined reference to `vres_get_width'
+collect2: error: ld returned 1 exit status
+make: *** [zynq_fsbl.elf] Error 1
+12:55:19 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82884	  11760	  71200	 165844	  287d4	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+12:58:34 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82936	  11760	  71200	 165896	  28808	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+12:58:38 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82936	  11760	  71200	 165896	  28808	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:02:41 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82884	  11760	  71200	 165844	  287d4	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:03:23 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o  ./src/camera_app.d ./src/ddr_init.d ./src/ff.d ./src/fmc_imageon_utils.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d ./src/video_frame_buffer.d ./src/video_resolution.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+13:03:23 **** Clean-only build of project device-tree_bsp_0 ****
+13:03:23 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm -rf ps7_cortexa9_0
+13:03:24 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 65009936 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 65010336 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 65010736 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 65011136 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 65013936 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 65015136 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 65015536 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 65015936 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 65012336 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 65014336 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 65016336 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 65013136 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 65013536 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 65016736 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 65017136 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 65017536 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 65017936 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 65018336 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 65011536 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 65018736 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 65011936 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 65009536 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 65012736 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+13:03:28 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+13:03:51 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+../src/camera_app.c: In function 'camera_loop':
+../src/camera_app.c:72:20: warning: unused variable 'pMM2S_Mem' [-Wunused-variable]
+../src/camera_app.c:71:20: warning: unused variable 'pS2MM_Mem' [-Wunused-variable]
+Finished building: ../src/camera_app.c
+ 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+../src/fsbl_hooks.c: In function 'FsblHookBeforeHandoff':
+../src/fsbl_hooks.c:150:2: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82884	  11760	  71200	 165844	  287d4	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:17:49 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+Finished building: ../src/camera_app.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82508	  11760	  71200	 165468	  2865c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:18:47 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82508	  11760	  71200	 165468	  2865c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:19:56 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82508	  11760	  71200	 165468	  2865c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:30:13 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82524	  11760	  71200	 165484	  2866c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:33:24 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o  ./src/camera_app.d ./src/ddr_init.d ./src/ff.d ./src/fmc_imageon_utils.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d ./src/video_frame_buffer.d ./src/video_resolution.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+13:33:24 **** Clean-only build of project zynq_fsbl_bsp ****
+13:33:24 **** Clean-only build of project device-tree_bsp_0 ****
+make -k clean 
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm -rf ps7_cortexa9_0
+13:33:25 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 67209488 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 67209888 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 67210288 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 67210688 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 67213488 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 67214688 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 67215088 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 67215488 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 67211888 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 67213888 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 67215888 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 67212688 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 67213088 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 67216288 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 67216688 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 67217088 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 67217488 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 67217888 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 67211088 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 67218288 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 67211488 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 67209088 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 67212288 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+13:33:28 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+13:33:49 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+Finished building: ../src/camera_app.c
+ 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+../src/fsbl_hooks.c: In function 'FsblHookBeforeHandoff':
+../src/fsbl_hooks.c:150:2: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82524	  11760	  71200	 165484	  2866c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:45:17 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82540	  11760	  71200	 165500	  2867c	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:51:25 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82552	  11760	  71200	 165512	  28688	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+13:51:37 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o  ./src/camera_app.d ./src/ddr_init.d ./src/ff.d ./src/fmc_imageon_utils.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/mmc.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d ./src/video_frame_buffer.d ./src/video_resolution.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+13:51:37 **** Clean-only build of project zynq_fsbl_bsp ****
+13:51:37 **** Clean-only build of project device-tree_bsp_0 ****
+make -k clean 
+make -k clean 
+rm -rf ps7_cortexa9_0
+rm -rf ps7_cortexa9_0
+13:51:38 **** Build of project device-tree_bsp_0 ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axis_mm2s_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.s_axis_s2mm_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_vdma_0
+-slave btns_5bits
+-slave ps7_afi_0
+IP 54720784 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 54721184 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 54721584 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 54721984 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 54724784 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 54725984 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 54726384 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 54726784 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 54723184 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 54725184 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 54727184 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 54723984 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 54724384 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 54727584 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 54727984 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 54728384 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 54728784 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 54729184 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 54722384 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 54729584 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 54722784 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 54720384 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 54723584 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.
+Finished building libraries
+13:51:42 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       -lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling axivdma
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+13:52:03 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+Finished building: ../src/camera_app.c
+ 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+../src/fsbl_hooks.c: In function 'FsblHookBeforeHandoff':
+../src/fsbl_hooks.c:150:2: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82552	  11760	  71200	 165512	  28688	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 

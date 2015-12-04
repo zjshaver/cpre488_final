@@ -147,6 +147,8 @@ u32 FsblHookBeforeHandoff(void)
 	 * Errors to be stored in the status variable and returned
 	 */
 	fsbl_printf(DEBUG_INFO,"In FsblHookBeforeHandoff function \r\n");
+	Status = camera_main();
+
 
 	return (Status);
 }

@@ -2,9 +2,9 @@ Release 14.6 - libgen Xilinx EDK 14.6 Build EDK_P.68d
  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: libgen -hw ../system_hw_platform/system.xml -lp
-/home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp
-../../repository -pe ps7_cortexa9_0 -log libgen.log system.mss 
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp ../../repository
+-lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
 
 
 Staging source files.
@@ -106,52 +106,52 @@ IP connected to bus: ps7_axi_interconnect_0
 -slave axi_vdma_0
 -slave btns_5bits
 -slave ps7_afi_0
-IP 59649408 ps7_afi_0 is already appended - skip it
+IP 54720784 ps7_afi_0 is already appended - skip it
 -slave ps7_afi_1
-IP 59649808 ps7_afi_1 is already appended - skip it
+IP 54721184 ps7_afi_1 is already appended - skip it
 -slave ps7_afi_2
-IP 59650208 ps7_afi_2 is already appended - skip it
+IP 54721584 ps7_afi_2 is already appended - skip it
 -slave ps7_afi_3
-IP 59650608 ps7_afi_3 is already appended - skip it
+IP 54721984 ps7_afi_3 is already appended - skip it
 -slave ps7_ddr_0
-IP 59639440 ps7_ddr_0 is already appended - skip it
+IP 54724784 ps7_ddr_0 is already appended - skip it
 -slave ps7_ddrc_0
-IP 59640640 ps7_ddrc_0 is already appended - skip it
+IP 54725984 ps7_ddrc_0 is already appended - skip it
 -slave ps7_dev_cfg_0
-IP 59641040 ps7_dev_cfg_0 is already appended - skip it
+IP 54726384 ps7_dev_cfg_0 is already appended - skip it
 -slave ps7_dma_ns
 -slave ps7_dma_s
-IP 59641440 ps7_dma_s is already appended - skip it
+IP 54726784 ps7_dma_s is already appended - skip it
 -slave ps7_ethernet_0
-IP 59651808 ps7_ethernet_0 is already appended - skip it
+IP 54723184 ps7_ethernet_0 is already appended - skip it
 -slave ps7_gpio_0
-IP 59639840 ps7_gpio_0 is already appended - skip it
+IP 54725184 ps7_gpio_0 is already appended - skip it
 -slave ps7_iop_bus_config_0
-IP 59641840 ps7_iop_bus_config_0 is already appended - skip it
+IP 54727184 ps7_iop_bus_config_0 is already appended - skip it
 -slave ps7_qspi_0
-IP 59652608 ps7_qspi_0 is already appended - skip it
+IP 54723984 ps7_qspi_0 is already appended - skip it
 -slave ps7_qspi_linear_0
-IP 59653008 ps7_qspi_linear_0 is already appended - skip it
+IP 54724384 ps7_qspi_linear_0 is already appended - skip it
 -slave ps7_ram_0
-IP 59642240 ps7_ram_0 is already appended - skip it
+IP 54727584 ps7_ram_0 is already appended - skip it
 -slave ps7_ram_1
-IP 59642640 ps7_ram_1 is already appended - skip it
+IP 54727984 ps7_ram_1 is already appended - skip it
 -slave ps7_scugic_0
-IP 59643040 ps7_scugic_0 is already appended - skip it
+IP 54728384 ps7_scugic_0 is already appended - skip it
 -slave ps7_scutimer_0
-IP 59643440 ps7_scutimer_0 is already appended - skip it
+IP 54728784 ps7_scutimer_0 is already appended - skip it
 -slave ps7_scuwdt_0
-IP 59643840 ps7_scuwdt_0 is already appended - skip it
+IP 54729184 ps7_scuwdt_0 is already appended - skip it
 -slave ps7_sd_0
-IP 59651008 ps7_sd_0 is already appended - skip it
+IP 54722384 ps7_sd_0 is already appended - skip it
 -slave ps7_slcr_0
-IP 59644240 ps7_slcr_0 is already appended - skip it
+IP 54729584 ps7_slcr_0 is already appended - skip it
 -slave ps7_ttc_0
-IP 59651408 ps7_ttc_0 is already appended - skip it
+IP 54722784 ps7_ttc_0 is already appended - skip it
 -slave ps7_uart_1
-IP 59649008 ps7_uart_1 is already appended - skip it
+IP 54720384 ps7_uart_1 is already appended - skip it
 -slave ps7_usb_0
-IP 59652208 ps7_usb_0 is already appended - skip it
+IP 54723584 ps7_usb_0 is already appended - skip it
 -slave sws_8bits
 ps7_afi_0
 ps7_afi_1

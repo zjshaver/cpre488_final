@@ -34,3 +34,11 @@
 18:01:20.642 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
 18:01:50.719 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
 18:01:55.896 ERROR - Unable to read in MSS file /home/zjshaver/cpre488/cpre488_final/Project/sw/device-tree_bsp_0/system.mss. 
+10:18:00.267 INFO  - Processing command line option -hwspec /home/zjshaver/cpre488/cpre488_final/Project/system/SDK/SDK_Export/hw/system.xml. 
+10:19:14.344 INFO  - Saving repository preferences. 
+10:19:14.353 INFO  - Reading in cores from local repositories: 
+		 /home/zjshaver/cpre488/cpre488_final/Project/repository
+		 /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib 
+10:19:14.377 INFO  - Updating libgen.options on all BSP projects. 
+10:19:14.394 INFO  - Cleaning BSP projects in the workspace. 
+10:19:15.507 INFO  - Saving repository preferences. 

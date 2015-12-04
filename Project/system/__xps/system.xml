@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Wed Dec  2 16:15:34 2015">
+<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Thu Dec  3 10:17:13 2015">
 
-  <SYSTEMINFO ARCH="zynq" DEVICE="xc7z020" PACKAGE="clg484" PART="xc7z020clg484-1" SOURCE="/home/zjshaver/cpre488/cpre488_final/MP2/system/system.xmp" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="xc7z020" PACKAGE="clg484" PART="xc7z020clg484-1" SOURCE="/home/zjshaver/cpre488/cpre488_final/Project/system/system.xmp" SPEEDGRADE="-1"/>
 
   <MODULES>
     <MODULE HWVERSION="4.01.a" INSTANCE="processing_system7_0" IPTYPE="PROCESSOR" MHS_INDEX="0" MODCLASS="PROCESSOR" MODTYPE="processing_system7" PROCTYPE="ARM">

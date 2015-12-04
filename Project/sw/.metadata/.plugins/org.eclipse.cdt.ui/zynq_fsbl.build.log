@@ -1,5 +1,10 @@
-18:02:19 **** Build of configuration Debug for project zynq_fsbl ****
+13:52:03 **** Build of configuration Debug for project zynq_fsbl ****
 make all 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+Finished building: ../src/camera_app.c
+ 
 Building file: ../src/ddr_init.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
@@ -10,6 +15,13 @@ Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
 Finished building: ../src/ff.c
  
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
 Building file: ../src/fsbl_handoff.S
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
@@ -18,6 +30,8 @@ Finished building: ../src/fsbl_handoff.S
 Building file: ../src/fsbl_hooks.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+../src/fsbl_hooks.c: In function 'FsblHookBeforeHandoff':
+../src/fsbl_hooks.c:150:2: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
 Finished building: ../src/fsbl_hooks.c
  
 Building file: ../src/image_mover.c
@@ -75,17 +89,36 @@ Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
 Finished building: ../src/sd.c
  
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
 Building target: zynq_fsbl.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: zynq_fsbl.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  68892	  11288	  68340	 148520	  24428	zynq_fsbl.elf
+  82552	  11760	  71200	 165512	  28688	zynq_fsbl.elf
 Finished building: zynq_fsbl.elf.size
  
 
-18:02:21 Build Finished (took 1s.664ms)
+13:52:05 Build Finished (took 2s.73ms)
 

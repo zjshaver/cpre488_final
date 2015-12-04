@@ -1,3 +1,3 @@
 PROCESSOR=ps7_cortexa9_0
-REPOSITORIES=-lp /home/zjshaver/cpre488/cpre488_final/MP2/repository/ProcessorIPLib -lp ../../repository
+REPOSITORIES=-lp ../../repository -lp /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib
 HWSPEC=../system_hw_platform/system.xml

@@ -80,7 +80,7 @@ int fmc_imageon_enable( camera_config_t *config )
       &(config->vdmacfg_hdmi_write),          // pWriteCfg
       config->hdmio_resolution,               // uVideoResolution
       config->hdmio_resolution,               // uStorageResolution
-      config->uBaseAddr_MEM_HdmiFrameBuffer,  // uMemAddr
+      config->uBaseAddr_MEM_HdmiFrameBuffer + 0x7E9000,  // uMemAddr
       config->uNumFrames_HdmiFrameBuffer      // uNumFrames
       );
 

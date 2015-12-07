@@ -87,10 +87,6 @@
       <VARIABLE COL_INDEX="11" COL_WIDTH="374" IS_VISIBLE="TRUE" VIEWDISP="Differential Polarity" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="-1" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="75,962,200" VERSION="0"/>
-    <SET ID="axi_vdma_0" IS_EXPANDED="TRUE">
-      <SET ID="M_AXIS_MM2S" IS_EXPANDED="TRUE"/>
-      <SET ID="S_AXIS_S2MM" IS_EXPANDED="TRUE"/>
-    </SET>
     <STATUS>
       <SELECTIONS>
         <VARIABLE ID="axi_vdma_0"/>
@@ -101,7 +97,7 @@
       <VARIABLE ID="processing_system7_0" ROW_INDEX="3"/>
       <VARIABLE ID="axi4lite_0" ROW_INDEX="1"/>
       <VARIABLE ID="axi_interconnect_1" ROW_INDEX="2"/>
-      <VARIABLE ID="axi_vdma_0" IS_EXPANDED="TRUE" ROW_INDEX="6"/>
+      <VARIABLE ID="axi_vdma_0" ROW_INDEX="6"/>
       <VARIABLE ID="BTNs_5Bits" ROW_INDEX="4"/>
       <VARIABLE ID="SWs_8Bits" ROW_INDEX="5"/>
     </SEQUENCES>

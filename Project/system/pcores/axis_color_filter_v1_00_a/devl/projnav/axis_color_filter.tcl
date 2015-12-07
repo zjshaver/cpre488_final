@@ -1,0 +1,10 @@
+project new /home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/axis_color_filter.xise;
+project set family zynq;
+project set device xc7z020;
+project set package clg484;
+project set speed -1;
+project set top_level_module_type HDL;
+project set synthesis_tool "XST (VHDL/Verilog)";
+lib_vhdl new axis_color_filter_v1_00_a;
+xfile add /home/zjshaver/cpre488/cpre488_final/Project/system//pcores/axis_color_filter_v1_00_a/hdl/vhdl/axis_color_filter.vhd -lib_vhdl axis_color_filter_v1_00_a;
+project close;

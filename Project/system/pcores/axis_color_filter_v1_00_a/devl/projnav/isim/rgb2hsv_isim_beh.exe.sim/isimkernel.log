@@ -1,0 +1,30 @@
+Command line:
+   rgb2hsv_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57800
+
+Sun Dec  6 22:36:22 2015
+
+
+ Elaboration Time: 0.06 sec
+
+ Current Memory Usage: 225.063 Meg
+
+ Total Signals          : 34
+ Total Nets             : 285
+ Total Signal Drivers   : 24
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 19
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 768
+In process rgb2hsv.vhd:98 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 0.11 sec
+
+ Current Memory Usage: 302.666 Meg
+
+Sun Dec  6 22:49:47 2015
+

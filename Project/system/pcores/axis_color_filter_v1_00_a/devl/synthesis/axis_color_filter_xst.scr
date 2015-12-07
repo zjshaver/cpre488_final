@@ -1,0 +1,11 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn /home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/synthesis/axis_color_filter_xst.prj
+-top axis_color_filter
+-p virtex6
+-ofn /home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/synthesis/axis_color_filter_xst.ngc
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /

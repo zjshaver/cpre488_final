@@ -11,14 +11,14 @@
 void main(){
 	int mem = open("/dev/mem", O_RDWR, 0);
 	if(mem == -1) printf("Error opening /dev/mem\n");
-	int inFile = open("tmp.in", O_RDONLY, 0);
+	int inFile = open("tmp.in", O_RDONLY | O_SYNC, 0);
 	if(inFile == -1) printf("Error opening tmp.in\n");
 	int outFile = open("tmp.out", O_WRONLY, 0);
 	if(outFile == -1) printf("Error opening tmp.out\n");
 
 	int * swOutBuf = mmap(NULL, 1280*720*3, PROT_WRITE, MAP_SHARED, mem, 0x1000000);
 	if(swOutBuf == MAP_FAILED) printf("Call to mmap for swOutBuf failed\n");
-	int * swInBuf = mmap(NULL, 1280*720*3, PROT_READ, MAP_SHARED, mem, 0x107E9000);
+	int * swInBuf = mmap(NULL, 1280*720*3, PROT_READ, MAP_SHARED, mem, 0x10A8C000);
 	if(swInBuf == MAP_FAILED) printf("Call to mmap for swInBuf failed\n");
 
 	int bytes_read;

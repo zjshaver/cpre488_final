@@ -1,0 +1,2 @@
+vhdl work "h_calc.vhd"
+vhdl work "rgb2hsv.vhd"

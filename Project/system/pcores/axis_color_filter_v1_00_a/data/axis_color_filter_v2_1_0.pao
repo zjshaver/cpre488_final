@@ -1,0 +1,7 @@
+##############################################################################
+## Filename:          /home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/data/axis_color_filter_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Dec  6 19:45:53 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib axis_color_filter_v1_00_a axis_color_filter vhdl

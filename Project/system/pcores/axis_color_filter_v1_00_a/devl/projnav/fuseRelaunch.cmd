@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv_isim_beh.exe" -prj "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv_beh.prj" "work.rgb2hsv" 

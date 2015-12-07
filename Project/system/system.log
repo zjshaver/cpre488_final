@@ -14615,3 +14615,170 @@ Done writing filter settings to:
 	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.filters
 Done writing Tab View settings to:
 	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: processing_system7, INSTANCE: processing_system7_0 - Superseded core for architecture 'zynq' - /home/zjshaver/cpre488/cpre488_final/Project/system/system.mhs line 30 
+WARNING:EDK:4092 - IPNAME: axi_vdma, INSTANCE: axi_vdma_0 - Pre-Production version not verified on hardware for architecture 'zynq' - /home/zjshaver/cpre488/cpre488_final/Project/system/system.mhs line 141 
+WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: BTNs_5Bits - Pre-Production version not verified on hardware for architecture 'zynq' - /home/zjshaver/cpre488/cpre488_final/Project/system/system.mhs line 168 
+WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: SWs_8Bits - Pre-Production version not verified on hardware for architecture 'zynq' - /home/zjshaver/cpre488/cpre488_final/Project/system/system.mhs line 180 
+Writing filter settings....
+Done writing filter settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.filters
+Done writing Tab View settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.gui
+ERROR:EDK - C_MM2S_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_MM2S_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+ERROR:EDK - C_S2MM_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_S2MM_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+ERROR:EDK - C_MM2S_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_MM2S_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+ERROR:EDK - C_S2MM_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_S2MM_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+ERROR:EDK - C_MM2S_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_MM2S_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+ERROR:EDK - C_S2MM_LINEBUFFER_THRESH (IPNAME:axi_vdma, INSTANCE:axi_vdma_0) - 
+
+C_S2MM_LINEBUFFER_THRESH can have values according to the following table:
+
+	TDATA WIDTH			VALID THRESH VALUES
+
+
+	8				1,2,3,....	LINEBUFFER_DEPTH
+	16				2,4,6,.....	LINEBUFFER_DEPTH
+	24,32				4,8,12,.....	LINEBUFFER_DEPTH
+	40 to 64			8,16,24,....	LINEBUFFER_DEPTH
+	72 to 128			16,32,48,....	LINEBUFFER_DEPTH
+	136 to 256			32,64,96,....	LINEBUFFER_DEPTH
+	264 to 512			64,128,192.....	LINEBUFFER_DEPTH
+	520 to 1024			128,256,384,....LINEBUFFER_DEPTH
+
+ 
+
+Running DRCs...
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) BTNs_5Bits	axi4lite_0
+  (0x41240000-0x4124ffff) SWs_8Bits	axi4lite_0
+  (0x43000000-0x4300ffff) axi_vdma_0	axi4lite_0
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 3 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 2 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is overriding PARAMETER C_FCLK_CLK1_BUF value to FALSE - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v4_01_a/data/processing_system7_v2_1_0.mpd line 345 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is overriding PARAMETER C_FCLK_CLK2_BUF value to FALSE - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7_v4_01_a/data/processing_system7_v2_1_0.mpd line 346 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding PARAMETER C_RANGE_CHECK value to 1 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_interconnect_1; no DECERR checking will be performed.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is overriding PARAMETER C_RANGE_CHECK value to 0 - /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.filters
+Done writing Tab View settings to:
+	/home/zjshaver/cpre488/cpre488_final/Project/system/etc/system.gui

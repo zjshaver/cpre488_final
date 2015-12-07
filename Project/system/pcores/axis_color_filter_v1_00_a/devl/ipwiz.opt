@@ -1,0 +1,11 @@
+-batch 
+-create axis_color_filter 
+-ver 1.00.a 
+-dir /home/zjshaver/cpre488/cpre488_final/Project/system/ 
+-lang vhdl 
+-bus axi4stream ms 
+-xps 
+-ise 
+-totalin 8
+-totalout 8
+-driver 

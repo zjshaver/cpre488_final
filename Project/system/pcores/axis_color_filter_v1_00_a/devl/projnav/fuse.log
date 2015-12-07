@@ -1,0 +1,23 @@
+Running: /remote/Xilinx/14.6/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv_isim_beh.exe" -prj "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv_beh.prj" "work.rgb2hsv" 
+ISim P.68d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/h_calc.vhd" into library work
+Parsing VHDL file "/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96828 KB
+Fuse CPU Usage: 970 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity h_calc [h_calc_default]
+Compiling architecture behavioral of entity rgb2hsv
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable /home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav/rgb2hsv_isim_beh.exe
+Fuse Memory Usage: 2239452 KB
+Fuse CPU Usage: 1060 ms
+GCC CPU Usage: 170 ms

@@ -1,0 +1,47 @@
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+Start Creating ISE project 
+Start Creating drver source 
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard!
+
+Peripheral summary
+
+  top name       : axis_color_filter
+  version        : 1.00.a
+  type           : AXI4STREAM master slave
+  features       : 
+
+File Summary
+
+  - HDL source -
+/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_
+00_a/hdl/vhdl
+  top level      : axis_color_filter.vhd
+
+  - ISE project -
+/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_
+00_a/devl/projnav
+  ise project    : axis_color_filter.xise
+  tcl script     : axis_color_filter.tcl
+
+
+  - XST synthesis -
+/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_
+00_a/devl/synthesis
+  xst script     : axis_color_filter_xst.scr
+  xst project    : axis_color_filter_xst.prj
+
+  - Misc file -
+/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_
+00_a/devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+

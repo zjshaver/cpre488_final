@@ -36,24 +36,29 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/test_vdma/src/helloworld.c" title="helloworld.c" tooltip="test_vdma/src/helloworld.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/test_vdma/src/helloworld.c" title="helloworld.c" tooltip="test_vdma/src/helloworld.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test_vdma/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="1595" selectionTopPixel="235"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2164" selectionTopPixel="235"/>
 </editor>
 <editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl_bsp/system.mss" title="system.mss" tooltip="zynq_fsbl_bsp/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zynq_fsbl_bsp/system.mss"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_utils.c" partName="fmc_imageon_utils.c" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src/fmc_imageon_utils.c" title="fmc_imageon_utils.c" tooltip="zynq_fsbl/src/fmc_imageon_utils.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_utils.c" partName="fmc_imageon_utils.c" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src/fmc_imageon_utils.c" title="fmc_imageon_utils.c" tooltip="zynq_fsbl/src/fmc_imageon_utils.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zynq_fsbl/src/fmc_imageon_utils.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1814" selectionTopPixel="437"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1814" selectionTopPixel="364"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="video_frame_buffer.c" partName="video_frame_buffer.c" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/test_vdma/src/video_frame_buffer.c" title="video_frame_buffer.c" tooltip="test_vdma/src/video_frame_buffer.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test_vdma/src/video_frame_buffer.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1106" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h" title="xparameters.h" tooltip="zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="4396" selectionTopPixel="1020"/>
 </editor>
 </editors>
 <views>
@@ -71,6 +76,9 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (8 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="250"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -203,7 +211,6 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test_vdma/src/helloworld.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/zynq_fsbl_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test_vdma/src/camera_app.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test_vdma/src/fmc_imageon_utils.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zynq_fsbl/src/camera_app.c"/>
@@ -216,63 +223,49 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test_vdma/src/camera_app.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zynq_fsbl/src/camera_app.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zynq_fsbl/src/fmc_imageon_utils.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/test_vdma/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h"/>
 </editors>
-<item historyLabel="system.mss" index="1"/>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="3" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2186" y="0"/>
-</item>
-<item historyLabel="camera_app.c" index="2">
-<position info="not_deleted" x="79" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="0">
-<position info="not_deleted" x="2186" y="0"/>
-</item>
-<item historyLabel="fmc_imageon_utils.c" index="3">
-<position info="not_deleted" x="3155" y="0"/>
-</item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="3">
+<item historyLabel="fmc_imageon_utils.c" index="2">
 <position info="not_deleted" x="3015" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1772" y="0"/>
 </item>
-<item historyLabel="camera_app.c" index="4">
+<item historyLabel="camera_app.c" index="3">
 <position info="not_deleted" x="79" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1772" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="3">
+<item historyLabel="fmc_imageon_utils.c" index="2">
 <position info="not_deleted" x="3015" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1763" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="3">
+<item historyLabel="fmc_imageon_utils.c" index="2">
 <position info="not_deleted" x="3015" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1763" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="3">
+<item historyLabel="fmc_imageon_utils.c" index="2">
 <position info="not_deleted" x="3015" y="0"/>
 </item>
-<item historyLabel="camera_app.c" index="2">
+<item historyLabel="camera_app.c" index="1">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="camera_app.h" index="5">
+<item historyLabel="camera_app.h" index="4">
 <position info="not_deleted" x="608" y="24"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1489" y="0"/>
 </item>
-<item historyLabel="camera_app.h" index="5">
+<item historyLabel="camera_app.h" index="4">
 <position info="not_deleted" x="633" y="110"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
@@ -281,89 +274,107 @@
 <item historyLabel="helloworld.c" index="0">
 <position/>
 </item>
-<item historyLabel="camera_app.c" index="6">
+<item historyLabel="camera_app.c" index="5">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="7">
+<item historyLabel="fmc_imageon_utils.c" index="6">
 <position info="not_deleted" x="80" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1512" y="0"/>
 </item>
-<item historyLabel="camera_app.c" index="6">
+<item historyLabel="camera_app.c" index="5">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="7">
+<item historyLabel="fmc_imageon_utils.c" index="6">
 <position info="not_deleted" x="2061" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="camera_app.c" index="6">
+<item historyLabel="camera_app.c" index="5">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="7">
+<item historyLabel="fmc_imageon_utils.c" index="6">
 <position info="not_deleted" x="2336" y="0"/>
 </item>
-<item historyLabel="video_frame_buffer.c" index="8">
+<item historyLabel="video_frame_buffer.c" index="7">
 <position info="not_deleted" x="2148" y="11"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="7">
+<item historyLabel="fmc_imageon_utils.c" index="6">
 <position info="not_deleted" x="2336" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="9">
+<item historyLabel="fmc_imageon_utils.c" index="8">
 <position/>
 </item>
-<item historyLabel="video_frame_buffer.c" index="10">
+<item historyLabel="video_frame_buffer.c" index="9">
 <position info="not_deleted" x="2148" y="11"/>
 </item>
-<item historyLabel="camera_app.c" index="11">
+<item historyLabel="camera_app.c" index="10">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="9">
+<item historyLabel="fmc_imageon_utils.c" index="8">
 <position/>
 </item>
-<item historyLabel="camera_app.c" index="11">
-<position info="not_deleted" x="79" y="0"/>
-</item>
-<item historyLabel="camera_app.c" index="12">
+<item historyLabel="camera_app.c" index="10">
 <position info="not_deleted" x="79" y="0"/>
 </item>
 <item historyLabel="camera_app.c" index="11">
 <position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="9">
+<item historyLabel="camera_app.c" index="10">
+<position info="not_deleted" x="79" y="0"/>
+</item>
+<item historyLabel="fmc_imageon_utils.c" index="8">
 <position/>
 </item>
-<item historyLabel="video_frame_buffer.c" index="10">
+<item historyLabel="video_frame_buffer.c" index="9">
 <position info="not_deleted" x="7860" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="13">
+<item historyLabel="fmc_imageon_utils.c" index="12">
 <position info="not_deleted" x="3157" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="9">
+<item historyLabel="fmc_imageon_utils.c" index="8">
 <position info="not_deleted" x="80" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="video_frame_buffer.c" index="10">
+<item historyLabel="video_frame_buffer.c" index="9">
 <position info="not_deleted" x="1106" y="0"/>
 </item>
-<item historyLabel="fmc_imageon_utils.c" index="9">
+<item historyLabel="fmc_imageon_utils.c" index="8">
 <position info="not_deleted" x="80" y="0"/>
 </item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="1595" y="8"/>
 </item>
-<item active="true" historyLabel="fmc_imageon_utils.c" index="13">
+<item historyLabel="fmc_imageon_utils.c" index="12">
 <position info="not_deleted" x="3157" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="13">
+<position info="not_deleted" x="1595" y="8"/>
+</item>
+<item historyLabel="helloworld.c" index="13">
+<position info="not_deleted" x="2133" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="13">
+<position info="not_deleted" x="1364" y="13"/>
+</item>
+<item historyLabel="xparameters.h" index="14">
+<position info="not_deleted" x="4396" y="10"/>
+</item>
+<item historyLabel="helloworld.c" index="13">
+<position info="not_deleted" x="1364" y="13"/>
+</item>
+<item active="true" historyLabel="helloworld.c" index="13">
+<position info="not_deleted" x="2139" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -382,6 +393,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h">
+<persistable path="/zynq_fsbl_bsp/ps7_cortexa9_0/include/xparameters.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="video_frame_buffer.c" tooltip="test_vdma/src/video_frame_buffer.c">
 <persistable path="/test_vdma/src/video_frame_buffer.c"/>
 </file>
@@ -423,9 +437,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="device-tree_bsp_0/system.mss">
 <persistable path="/device-tree_bsp_0/system.mss"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="system_hw_platform/system.xml">
-<persistable path="/system_hw_platform/system.xml"/>
 </file>
 </mruList>
 </workbench>

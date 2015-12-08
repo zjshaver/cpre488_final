@@ -88,3 +88,46 @@
 18:45:12.425 INFO  - PS Initialization is complete. 
 18:45:24.012 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
 22:54:52.298 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:39:25.552 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+14:39:44.596 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:39:44.696 INFO  - PS initialization will be done as it is not done before. 
+14:39:44.697 INFO  - Running PS initialization.... 
+14:39:45.798 INFO  - ps7_init is completed. 
+14:39:45.898 INFO  - ps7_post_config is completed. 
+14:39:45.998 INFO  - PS Initialization is complete. 
+14:39:56.382 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:42:38.885 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+14:42:43.989 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:42:44.089 INFO  - PS initialization will be done as it is not done before. 
+14:42:44.090 INFO  - Running PS initialization.... 
+14:42:45.255 INFO  - ps7_init is completed. 
+14:42:45.355 INFO  - ps7_post_config is completed. 
+14:42:45.455 INFO  - PS Initialization is complete. 
+14:43:18.196 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:44:36.082 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:45:27.353 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:45:48.457 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:04.053 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:27.581 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:38.479 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:47:46.632 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:47:46.634 ERROR - Timeout occured while waiting to get reply for command "xfpga_isconfigured -cable type xilinx_tcf url TCP:co2041-06.ece.iastate.edu:50001" 
+14:47:46.635 ERROR - Checking FPGA configuration failed.. 
+14:55:00.163 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:55:00.163 ERROR - Timeout occured while waiting to get reply for command "xconnect arm hw  -cable type xilinx_tcf url TCP:co2041-06.ece.iastate.edu:50001 -debugdevice cpunr 1 devicenr 1" 
+14:55:10.368 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+14:55:10.371 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+14:56:34.908 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+14:56:43.802 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:56:43.902 INFO  - PS initialization will be done as it is not done before. 
+14:56:43.903 INFO  - Running PS initialization.... 
+14:56:44.941 INFO  - ps7_init is completed. 
+14:56:45.041 INFO  - ps7_post_config is completed. 
+14:56:45.141 INFO  - PS Initialization is complete. 
+14:57:03.810 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:57:17.719 INFO  - Processor reset is completed for ps7_cortexa9_0 

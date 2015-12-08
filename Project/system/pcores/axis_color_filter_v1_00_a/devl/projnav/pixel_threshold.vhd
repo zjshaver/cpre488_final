@@ -36,8 +36,36 @@ end pixel_threshold;
 
 architecture Behavioral of pixel_threshold is
 
+signal hsvout, threshout : STD_LOGIC_VECTOR(25 downto 0);
+
 begin
 
+RGB2HSV: entity work.rgb2hsv
+port map
+(
+in_data => in_data,
+out_data => hsvout
+);
+
+THRESH: entity work.rgb_threshold
+port map
+(
+in_data => hsvout,
+out_data => threshout,
+h_high => "0100001110",
+h_low => "0001011010",
+s_high => "11000000",
+s_low => "01000000",
+v_high => "11000000",
+v_low => "01000000"
+);
+
+HSV2RGB: entity work.hsv2rgb
+port map
+(
+in_data => threshout,
+out_data => out_data
+);
 
 end Behavioral;
 

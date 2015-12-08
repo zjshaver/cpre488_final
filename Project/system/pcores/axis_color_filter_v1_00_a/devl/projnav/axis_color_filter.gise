@@ -22,21 +22,26 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="axis_color_filter.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="axis_color_filter.fdo"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="h_calc.fdo"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="rgb2hsv.fdo"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rgb2hsv_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rgb2hsv_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rgb2hsv_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1449460777" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1449460777">
+    <transform xil_pn:end_ts="1449542425" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1449542425">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1449462729" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1449462729">
+    <transform xil_pn:end_ts="1449552194" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1449552194">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/vhdl/axis_color_filter.vhd"/>
@@ -46,19 +51,19 @@
       <outfile xil_pn:name="rgb2hsv.vhd"/>
       <outfile xil_pn:name="rgb_threshold.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1449460777" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1845870048198237173" xil_pn:start_ts="1449460777">
+    <transform xil_pn:end_ts="1449542918" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1845870048198237173" xil_pn:start_ts="1449542918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1449460777" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8915253627340043279" xil_pn:start_ts="1449460777">
+    <transform xil_pn:end_ts="1449542918" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8915253627340043279" xil_pn:start_ts="1449542918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1449460777" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1342846700579963208" xil_pn:start_ts="1449460777">
+    <transform xil_pn:end_ts="1449542425" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4190304095380712677" xil_pn:start_ts="1449542425">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1449462729" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1449462729">
+    <transform xil_pn:end_ts="1449552194" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1449552194">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../hdl/vhdl/axis_color_filter.vhd"/>
@@ -68,24 +73,14 @@
       <outfile xil_pn:name="rgb2hsv.vhd"/>
       <outfile xil_pn:name="rgb_threshold.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1449462733" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7625442177973322558" xil_pn:start_ts="1449462729">
+    <transform xil_pn:end_ts="1449552195" xil_pn:in_ck="1748229758055247741" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3735012481952913813" xil_pn:start_ts="1449552194">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="rgb2hsv_beh.prj"/>
-      <outfile xil_pn:name="rgb2hsv_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1449462733" xil_pn:in_ck="-7894910931208676979" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7680732714203448411" xil_pn:start_ts="1449462733">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="rgb2hsv_isim_beh.wdb"/>
+      <outfile xil_pn:name="rgb2hsv.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
     </transform>
   </transforms>
 

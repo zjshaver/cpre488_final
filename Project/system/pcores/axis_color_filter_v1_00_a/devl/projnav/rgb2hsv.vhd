@@ -44,16 +44,15 @@ signal h10 : STD_LOGIC_VECTOR(9 downto 0);
 
 signal rg5_gt : STD_LOGIC_VECTOR(4 downto 0);
 signal cmax5 : STD_LOGIC_VECTOR(4 downto 0);
-signal cmax10 : STD_LOGIC_VECTOR(9 downto 0);
+signal cmax20 : STD_LOGIC_VECTOR(19 downto 0);
 signal cmaxh10 : STD_LOGIC_VECTOR(9 downto 0);
 
 signal rg5_lt : STD_LOGIC_VECTOR(4 downto 0);
 signal cmin5 : STD_LOGIC_VECTOR(4 downto 0);
 
 signal delta5 : STD_LOGIC_VECTOR(4 downto 0);
-signal delta10 : STD_LOGIC_VECTOR(9 downto 0);
-signal delta10x31 : STD_LOGIC_VECTOR(9 downto 0);
-signal deltas10 : STD_LOGIC_VECTOR(9 downto 0);
+signal delta20 : STD_LOGIC_VECTOR(19 downto 0);
+signal delta40x255 : STD_LOGIC_VECTOR(39 downto 0);
 
 begin
 
@@ -84,27 +83,32 @@ end process;
 process(b5, rg5_lt)
 begin
 	if(unsigned(rg5_lt) < unsigned(b5)) then
-		cmax5 <= rg5_lt;
+		cmin5 <= rg5_lt;
 	else
-		cmax5 <= b5;
+		cmin5 <= b5;
 	end if;
 end process;
 
 process(cmax5, cmin5)
 begin
-	delta5 <= std_logic_vector(to_unsigned(to_integer(unsigned(cmax5)) - to_integer(unsigned(cmin5)), 5));
+	delta5 <= std_logic_vector(unsigned(cmax5) - unsigned(cmin5));
 end process;
 
-process(delta5, cmax5)
+delta20 <= "000000000000000" & delta5;
+cmax20 <= "000000000000000" & cmax5;
+
+process(delta20, cmax20)
 begin
-	delta10 <= "00000" & delta5;
-	cmax10 <= "00000" & cmax5;
-	delta10x31 <= std_logic_vector(to_unsigned(to_integer(unsigned(delta10)) * 31, 10));
-	deltas10 <= std_logic_vector(to_unsigned(to_integer(unsigned(delta10x31)) / to_integer(unsigned(cmax10)), 10));
+
+	delta40x255 <= std_logic_vector((255 * unsigned(delta20)) / unsigned(cmax20));
+end process;
+
+process(cmax5, delta40x255)
+begin
 	if(unsigned(cmax5) = 0) then
 		s8 <= "00000000";
 	else
-		s8 <= deltas10(7 downto 0);
+		s8 <= delta40x255(7 downto 0);
 	end if;
 end process;
 

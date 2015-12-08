@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav
+Eaxis_color_filter
+Z1 w1449452753
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/zjshaver/cpre488/cpre488_final/Project/system/pcores/axis_color_filter_v1_00_a/devl/projnav
+Z6 8../../hdl/vhdl/axis_color_filter.vhd
+Z7 F../../hdl/vhdl/axis_color_filter.vhd
+l0
+L76
+V59RiInhmb<^<7?F;Ec9^`0
+!s100 <WWX^V5OeG7I7`ez]K5nU2
+Z8 OL;C;10.1c;51
+31
+!i10b 1
+Z9 !s108 1449542906.276433
+Z10 !s90 -reportprogress|300|-explicit|-93|-work|axis_color_filter_v1_00_a|../../hdl/vhdl/axis_color_filter.vhd|
+Z11 !s107 ../../hdl/vhdl/axis_color_filter.vhd|
+Z12 o-explicit -93 -work axis_color_filter_v1_00_a
+Z13 tExplicit 1
+Aexample
+R2
+R3
+R4
+Z14 DEx4 work 17 axis_color_filter 0 22 59RiInhmb<^<7?F;Ec9^`0
+l134
+L115
+Z15 V`R=mAkTom<WkGCUFki1BW1
+Z16 !s100 @PW7M]zY^A^jG9Eofz7]J3
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

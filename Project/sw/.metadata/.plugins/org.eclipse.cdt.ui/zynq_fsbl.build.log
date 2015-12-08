@@ -1,23 +1,6 @@
-15:01:39 **** Auto Build of configuration Debug for project zynq_fsbl ****
+18:45:08 **** Incremental Build of configuration Debug for project zynq_fsbl ****
 make all 
-Building file: ../src/fmc_imageon_utils.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
-../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
-../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
-Finished building: ../src/fmc_imageon_utils.c
- 
-Building target: zynq_fsbl.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -L"/home/zjshaver/cpre488/cpre488_final/Project/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/camera_app.o ./src/ddr_init.o ./src/ff.o ./src/fmc_imageon_utils.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o ./src/video_frame_buffer.o ./src/video_resolution.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zynq_fsbl.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  82564	  11760	  71200	 165524	  28694	zynq_fsbl.elf
-Finished building: zynq_fsbl.elf.size
- 
+make: Nothing to be done for `all'.
 
-15:01:40 Build Finished (took 677ms)
+18:45:08 Build Finished (took 61ms)
 

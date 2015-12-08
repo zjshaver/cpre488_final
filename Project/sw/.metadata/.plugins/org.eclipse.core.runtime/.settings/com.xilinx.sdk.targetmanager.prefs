@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+jtag.settings=\ -cable type xilinx_tcf url TCP\:co2041-02.ece.iastate.edu\:50001

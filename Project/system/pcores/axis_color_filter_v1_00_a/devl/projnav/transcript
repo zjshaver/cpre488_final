@@ -1,0 +1,161 @@
+# //  ModelSim SE-64 10.1c Jul 27 2012 Linux 2.6.32-573.3.1.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {rgb2hsv.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity h_calc
+# -- Compiling architecture Behavioral of h_calc
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rgb2hsv
+# -- Compiling architecture Behavioral of rgb2hsv
+# -- Loading entity h_calc
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.rgb2hsv 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.rgb2hsv(behavioral)#1
+# Loading work.h_calc(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv/H_CALC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv/H_CALC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /rgb2hsv/H_CALC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /rgb2hsv/H_CALC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /rgb2hsv
+force -freeze sim:/rgb2hsv/in_data 1111110000011111 0
+run
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 1 us  Iteration: 1  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 1 us  Iteration: 1  Instance: /rgb2hsv
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1 us  Iteration: 1  Instance: /rgb2hsv/H_CALC
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1 us  Iteration: 1  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1 us  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1 us  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1 us  Iteration: 4  Instance: /rgb2hsv/H_CALC
+run
+run
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 0000000000000000 0
+run
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1000600 ps  Iteration: 4  Instance: /rgb2hsv
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1000600 ps  Iteration: 5  Instance: /rgb2hsv
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1000600 ps  Iteration: 5  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1000600 ps  Iteration: 5  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1000600 ps  Iteration: 5  Instance: /rgb2hsv/H_CALC
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 1111111111111111 0
+run
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 2  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 2  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 2  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 5  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 5  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001 ns  Iteration: 5  Instance: /rgb2hsv/H_CALC
+run
+run
+force -freeze sim:/rgb2hsv/in_data 0111110000000000 0
+run
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001300 ps  Iteration: 2  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001300 ps  Iteration: 2  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1001300 ps  Iteration: 2  Instance: /rgb2hsv/H_CALC
+run
+run
+force -freeze sim:/rgb2hsv/in_data 0000001111100000 0
+run
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 0000000000011111 0
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 1111111111100000 0
+run
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002300 ps  Iteration: 3  Instance: /rgb2hsv
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002300 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002300 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002300 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 1000001111111111 0
+run
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002700 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002700 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+# ** Error: DIV, MOD, or REM by zero
+#    Time: 1002700 ps  Iteration: 4  Instance: /rgb2hsv/H_CALC
+run
+run
+run
+force -freeze sim:/rgb2hsv/in_data 0111110000011111 0
+run
+run
+run
+run

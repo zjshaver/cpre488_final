@@ -42,3 +42,49 @@
 10:19:14.377 INFO  - Updating libgen.options on all BSP projects. 
 10:19:14.394 INFO  - Cleaning BSP projects in the workspace. 
 10:19:15.507 INFO  - Saving repository preferences. 
+18:10:18.725 INFO  - Restoring local repository preferences: 
+		 /home/zjshaver/cpre488/cpre488_final/Project/repository
+		 /home/zjshaver/cpre488/cpre488_final/Project/repository/ProcessorIPLib 
+18:31:46.158 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:31:53.601 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:31:53.701 INFO  - PS initialization will be done as it is not done before. 
+18:31:53.702 INFO  - Running PS initialization.... 
+18:31:54.693 INFO  - ps7_init is completed. 
+18:31:54.793 INFO  - ps7_post_config is completed. 
+18:31:54.893 INFO  - PS Initialization is complete. 
+18:32:03.881 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:33:42.104 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:33:47.342 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:33:47.442 INFO  - PS initialization will be done as it is not done before. 
+18:33:47.443 INFO  - Running PS initialization.... 
+18:33:48.456 INFO  - ps7_init is completed. 
+18:33:48.556 INFO  - ps7_post_config is completed. 
+18:33:48.656 INFO  - PS Initialization is complete. 
+18:35:16.666 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:36:04.798 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:36:09.620 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:36:09.720 INFO  - PS initialization will be done as it is not done before. 
+18:36:09.721 INFO  - Running PS initialization.... 
+18:36:10.878 INFO  - ps7_init is completed. 
+18:36:10.978 INFO  - ps7_post_config is completed. 
+18:36:11.078 INFO  - PS Initialization is complete. 
+18:36:17.019 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:41:39.473 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:41:45.119 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:41:45.219 INFO  - PS initialization will be done as it is not done before. 
+18:41:45.220 INFO  - Running PS initialization.... 
+18:41:46.189 INFO  - ps7_init is completed. 
+18:41:46.290 INFO  - ps7_post_config is completed. 
+18:41:46.390 INFO  - PS Initialization is complete. 
+18:44:27.439 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:44:32.370 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:44:46.014 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:45:04.532 INFO  - FPGA configured successfully with bitstream "/home/zjshaver/cpre488/cpre488_final/Project/sw/system_hw_platform/system.bit" 
+18:45:11.116 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:45:11.216 INFO  - PS initialization will be done as it is not done before. 
+18:45:11.218 INFO  - Running PS initialization.... 
+18:45:12.224 INFO  - ps7_init is completed. 
+18:45:12.325 INFO  - ps7_post_config is completed. 
+18:45:12.425 INFO  - PS Initialization is complete. 
+18:45:24.012 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+22:54:52.298 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

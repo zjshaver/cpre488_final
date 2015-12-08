@@ -43,8 +43,7 @@ architecture Behavioral of h_calc is
 
 signal r16, g16, b16 : STD_LOGIC_VECTOR(15 downto 0);
 signal delta16 : STD_LOGIC_VECTOR(15 downto 0);
-signal bcalc5, gcalc5, rcalc5 : STD_LOGIC_VECTOR(4 downto 0);
-signal bcalc16, gcalc16, rcalc16 : STD_LOGIC_VECTOR(15 downto 0);
+signal bcalc32, gcalc32, rcalc32 : STD_LOGIC_VECTOR(31 downto 0);
 
 
 begin
@@ -56,28 +55,28 @@ delta16 <= "00000000000" & delta5;
 
 process(r16, g16, delta16)
 begin
-	bcalc16 <= std_logic_vector((((unsigned(r16) - unsigned(g16)) / unsigned(delta16)) + 4) * 60);
+	bcalc32 <= std_logic_vector((((signed(r16) - signed(g16)) / signed(delta16)) + 4) * 60);
 end process;
 
 process(r16, b16, delta16)
 begin
-	gcalc16 <= std_logic_vector((((unsigned(b16) - unsigned(r16)) / unsigned(delta16)) + 2) * 60);
+	gcalc32 <= std_logic_vector((((signed(b16) - signed(r16)) / signed(delta16)) + 2) * 60);
 end process;
 
 process(g16, b16, delta16)
 begin
-	rcalc16 <= std_logic_vector((((unsigned(g16) - unsigned(b16)) / unsigned(delta16)) mod 6) * 60);
+	rcalc32 <= std_logic_vector((((signed(g16) - signed(b16)) / signed(delta16)) mod 6) * 60);
 end process;
 
-process(cmax5, r5, g5, b5, rcalc16, gcalc16, bcalc16)
+process(cmax5, r5, g5, b5, rcalc32, gcalc32, bcalc32)
 begin
 	if(unsigned(r5) = unsigned(cmax5)) then
-		h10 <= rcalc16(9 downto 0);
+		h10 <= rcalc32(9 downto 0);
 	else
 		if(unsigned(g5) = unsigned(cmax5)) then
-			h10 <= gcalc16(9 downto 0);
+			h10 <= gcalc32(9 downto 0);
 		else
-			h10 <= bcalc16(9 downto 0);
+			h10 <= bcalc32(9 downto 0);
 		end if;
 	end if;
 end process;

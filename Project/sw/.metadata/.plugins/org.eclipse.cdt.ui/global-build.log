@@ -3416,3 +3416,436 @@ arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
   82564	  11760	  71200	 165524	  28694	zynq_fsbl.elf
 Finished building: zynq_fsbl.elf.size
  
+18:10:54 **** Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22676	   1096	  29780	  53552	   d130	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:13:13 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:13:25 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:44:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/camera_app.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/camera_app.d" -MT"src/camera_app.d" -o "src/camera_app.o" "../src/camera_app.c"
+Finished building: ../src/camera_app.c
+ 
+Building file: ../src/fmc_imageon_utils.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fmc_imageon_utils.d" -MT"src/fmc_imageon_utils.d" -o "src/fmc_imageon_utils.o" "../src/fmc_imageon_utils.c"
+../src/fmc_imageon_utils.c: In function 'fmc_imageon_enable':
+../src/fmc_imageon_utils.c:24:8: warning: unused variable 'ret' [-Wunused-variable]
+Finished building: ../src/fmc_imageon_utils.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:53:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:52:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:51:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:78:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+Finished building: ../src/video_resolution.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38460	   1576	  32640	  72676	  11be4	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:26:34 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:44:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:47:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:57:25: error: expected expression before ')' token
+../src/helloworld.c:57:25: error: too many arguments to function 'print'
+../src/helloworld.c:37:6: note: declared here
+make: *** [src/helloworld.o] Error 1
+18:26:54 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:44:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:45:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:54:6: warning: implicit declaration of function 'Xil_printf' [-Wimplicit-function-declaration]
+../src/helloworld.c:54:30: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+18:27:23 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:44:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:45:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:54:6: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/helloworld.c:54:30: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+18:28:15 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:42:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:45:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:46:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:55:6: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/helloworld.c:55:30: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+18:28:31 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:60:30: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+18:28:48 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:5: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:60:25: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+18:29:18 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38564	   1576	  32640	  72780	  11c4c	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:31:50 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:31:51 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:32:36 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38588	   1576	  32640	  72804	  11c64	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:33:18 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38620	   1576	  32640	  72836	  11c84	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:33:44 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:33:44 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:35:32 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38596	   1576	  32640	  72812	  11c6c	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:36:06 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:36:07 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:37:58 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:51:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:67:5: error: expected expression before 'return'
+../src/helloworld.c:68:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+18:39:52 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38664	   1576	  32640	  72880	  11cb0	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:41:12 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38736	   1576	  32640	  72952	  11cf8	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:41:41 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:41:42 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:43:00 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:73:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38828	   1576	  32640	  73044	  11d54	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:43:47 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:73:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:77:5: error: expected ';' before '}' token
+make: *** [src/helloworld.o] Error 1
+18:43:51 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:73:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38828	   1576	  32640	  73044	  11d54	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:44:29 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:44:29 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.
+18:44:42 **** Auto Build of configuration Debug for project test_vdma ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:5: warning: implicit declaration of function 'camera_main' [-Wimplicit-function-declaration]
+../src/helloworld.c:50:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:64:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:68:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:70:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:73:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+Finished building: ../src/helloworld.c
+ 
+Building target: test_vdma.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "test_vdma.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_resolution.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test_vdma.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test_vdma.elf  |tee "test_vdma.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38828	   1576	  32640	  73044	  11d54	test_vdma.elf
+Finished building: test_vdma.elf.size
+ 
+18:45:08 **** Incremental Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:45:08 **** Incremental Build of configuration Debug for project test_vdma ****
+make all 
+make: Nothing to be done for `all'.

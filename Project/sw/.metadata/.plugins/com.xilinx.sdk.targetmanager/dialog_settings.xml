@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="co2041-02.ece.iastate.edu" key="hw_server_host"/>
+	<item value="50001" key="hw_server_port"/>
+</section>
